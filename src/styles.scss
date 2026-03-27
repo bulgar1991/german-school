@@ -1,0 +1,72 @@
+@use '@angular/material' as material;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include material.elevation-classes();
+@include material.app-background();
+
+@layer base {
+  html {
+    @apply bg-light-black;
+    @apply font-roboto text-white h-full;
+    scrollbar-width: none;
+  }
+
+  body {
+    @apply h-full;
+  }
+
+  app-root {
+    @apply block overflow-auto h-full relative;
+
+    @screen sm {
+      @apply pb-0
+    }
+
+    &::-webkit-scrollbar {
+      @apply w-1;
+    }
+
+    &::-webkit-scrollbar-track {
+      @apply bg-scrollTrack rounded-full;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-yellow-scroll rounded-full;
+    }
+
+    @media (max-width: 639px) {
+      scrollbar-width: thin;
+      scrollbar-color: #FFF261 #8A90A1;
+    }
+  }
+
+  a,
+  button {
+    touch-action: manipulation;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+  }
+
+  i {
+    touch-action: manipulation;
+    @apply inline-flex text-2xl;
+  }
+
+  img {
+    @apply pointer-events-none;
+  }
+
+  *:focus {
+    outline: none;
+  }
+}

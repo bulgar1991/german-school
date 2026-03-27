@@ -1,0 +1,265 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "courses": "Cursuri",
+    "schedule": "Orar",
+    "gallery": "Galerie",
+    "services": "Servicii",
+    "faq": "FAQ",
+    "contact": "Contacte",
+    "enrollBtn": "Înscrie-te"
+  },
+  "hero": {
+    "prefix": "Sprechen Sie",
+    "highlight": "Deutsch?",
+    "subtitle": "Cursuri de germană pentru toate nivelurile. Profesori cu experiență, certificare internațională ÖSD, grupe mici.",
+    "cta": "Înscrie-te acum",
+    "ctaSecondary": "Află mai mult"
+  },
+  "announcements": {
+    "title": "Anunțuri cursuri",
+    "from": "Din",
+    "timeLabel": "ora",
+    "enroll": "Înscrie-te",
+    "items": [
+      {
+        "level": "A1.2",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană pentru începători avansați."
+      },
+      {
+        "level": "B1.2",
+        "date": "14 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel intermediar."
+      },
+      {
+        "level": "A2.1",
+        "date": "21 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel elementar."
+      },
+      {
+        "level": "A2.2",
+        "date": "4 februarie",
+        "time": "18:00",
+        "desc": "Continuare curs elementar."
+      },
+      {
+        "level": "B2.1",
+        "date": "11 februarie",
+        "time": "09:00",
+        "desc": "Curs avansat de germană."
+      }
+    ]
+  },
+  "services": {
+    "title": "Ce servicii oferim",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Cursuri limbi germane",
+        "desc": "Cursuri pentru toate nivelurile, de la A1 până la C2, cu certificare internațională."
+      },
+      {
+        "icon": "🎓",
+        "title": "Examen internațional ÖSD",
+        "desc": "Centru autorizat pentru susținerea examenelor ÖSD recunoscute mondial."
+      },
+      {
+        "icon": "⚡",
+        "title": "Pregătire intensivă B2/C1",
+        "desc": "Cursuri intensive pentru accederea la niveluri superioare rapid."
+      },
+      {
+        "icon": "🌍",
+        "title": "Cursuri limbi moderne",
+        "desc": "Ofertă diversificată de limbi moderne pentru toate vârstele."
+      }
+    ]
+  },
+  "partner": {
+    "title": "Partenerul nostru",
+    "desc": "Suntem centru autorizat de examinare ÖSD (Österreichisches Sprachdiplom Deutsch). ÖSD este recunoscut în Austria, Germania și Elveția și acceptat de universități și angajatori din întreaga lume.",
+    "learnMore": "Citește mai mult"
+  },
+  "ourCourses": {
+    "title": "Cursurile noastre",
+    "enroll": "Înscrie-te",
+    "months": "luni",
+    "hoursPerWeek": "ore/săpt.",
+    "studentsPerGroup": "studenți",
+    "items": [
+      {
+        "level": "A1.1",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A1.2",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A2.1",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A2.2",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "B1.1",
+        "duration": 4,
+        "hours": 3,
+        "group": "6–8"
+      },
+      {
+        "level": "B1.2",
+        "duration": 4,
+        "hours": 3,
+        "group": "6–8"
+      },
+      {
+        "level": "B2.1",
+        "duration": 4,
+        "hours": 4,
+        "group": "6–8"
+      },
+      {
+        "level": "B2.2",
+        "duration": 4,
+        "hours": 4,
+        "group": "6–8"
+      }
+    ]
+  },
+  "certificate": {
+    "text": "La finalizarea oricărui curs vei primi un",
+    "highlight": "certificat",
+    "cta": "Înscrie-te acum"
+  },
+  "schedule": {
+    "title": "Orarul cursurilor",
+    "col": {
+      "course": "Curs",
+      "level": "Nivel",
+      "days": "Zile",
+      "time": "Ora"
+    },
+    "note": "* Orarul poate fi modificat. Contactați-ne pentru confirmare.",
+    "rows": [
+      {
+        "course": "Germana",
+        "level": "A1",
+        "days": "Lun · Mier · Vin",
+        "time": "09:00 – 10:30"
+      },
+      {
+        "course": "Germana",
+        "level": "A1+",
+        "days": "Mar · Joi",
+        "time": "18:00 – 19:30"
+      },
+      {
+        "course": "Germana",
+        "level": "A2",
+        "days": "Lun · Mier",
+        "time": "18:00 – 19:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B1",
+        "days": "Mar · Joi · Sâm",
+        "time": "09:00 – 10:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B1+",
+        "days": "Lun",
+        "time": "10:00 – 11:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B2",
+        "days": "Mar · Joi",
+        "time": "09:30 – 11:00"
+      },
+      {
+        "course": "Germana",
+        "level": "C1",
+        "days": "Lun",
+        "time": "18:00 – 20:00"
+      },
+      {
+        "course": "Germana",
+        "level": "Tfl4",
+        "days": "Sâm",
+        "time": "10:00 – 12:30"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galerie foto",
+    "of": "din"
+  },
+  "contact": {
+    "title": "Contacte / Adresă",
+    "name": "Prenume și Nume",
+    "email": "Adresa Email",
+    "phone": "Număr de Telefon",
+    "message": "Mesajul tău",
+    "send": "Trimite mesajul",
+    "sending": "Se trimite…",
+    "success": "✅ Mesajul a fost trimis! Vă vom contacta în curând.",
+    "error": "❌ Eroare la trimitere. Încercați din nou.",
+    "addressValue": "str. Independenței 1, Chișinău",
+    "phoneValue": "+373 22 000 000",
+    "emailValue": "info@german.clg.md",
+    "scheduleValue": "Lun – Vin: 9:00 – 18:00",
+    "mapTitle": "Locație"
+  },
+  "faq": {
+    "title": "Întrebări și răspunsuri",
+    "items": [
+      {
+        "q": "Ce acte sunt necesare pentru înscriere?",
+        "a": "O copie a buletinului de identitate și o fotografie tip buletin. Plata se poate face în numerar sau prin transfer bancar."
+      },
+      {
+        "q": "Se pot returna banii dacă renunț la curs?",
+        "a": "Da, dacă renunțați în primele 3 zile de la începerea cursului, returnăm 80% din suma achitată."
+      },
+      {
+        "q": "Există cursuri B2/C1 pentru angajare în Germania?",
+        "a": "Da, oferim cursuri intensive B2/C1 pentru persoanele care doresc să lucreze în Germania sau Austria."
+      },
+      {
+        "q": "Pregătiți pentru examene ÖSD internaționale?",
+        "a": "Suntem centru autorizat ÖSD și oferim pregătire pentru toate nivelurile: A1, A2, B1, B2, C1, C2."
+      },
+      {
+        "q": "Cât de mari sunt grupele?",
+        "a": "Grupele au 6–10 cursanți, ceea ce asigură atenție individuală și progres rapid."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "text": "Mai aveți întrebări?",
+    "subtitle": "Contactați-ne și vă vom răspunde în cel mai scurt timp posibil.",
+    "cta": "Contactează-ne"
+  },
+  "footer": {
+    "tagline": "Centru de limbi germane și certificare ÖSD",
+    "navigation": "Navigare",
+    "contactTitle": "Contact",
+    "rights": "Toate drepturile rezervate."
+  }
+}

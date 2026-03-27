@@ -1,0 +1,265 @@
+{
+  "nav": {
+    "home": "Главная",
+    "courses": "Курсы",
+    "schedule": "Расписание",
+    "gallery": "Галерея",
+    "services": "Услуги",
+    "faq": "Вопросы",
+    "contact": "Контакты",
+    "enrollBtn": "Записаться"
+  },
+  "hero": {
+    "prefix": "Sprechen Sie",
+    "highlight": "Deutsch?",
+    "subtitle": "Курсы немецкого языка для всех уровней. Опытные преподаватели, международная сертификация ÖSD, небольшие группы.",
+    "cta": "Записаться сейчас",
+    "ctaSecondary": "Узнать больше"
+  },
+  "announcements": {
+    "title": "Anunțuri cursuri",
+    "from": "Din",
+    "timeLabel": "ora",
+    "enroll": "Înscrie-te",
+    "items": [
+      {
+        "level": "A1.2",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană pentru începători avansați."
+      },
+      {
+        "level": "B1.2",
+        "date": "14 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel intermediar."
+      },
+      {
+        "level": "A2.1",
+        "date": "21 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel elementar."
+      },
+      {
+        "level": "A2.2",
+        "date": "4 februarie",
+        "time": "18:00",
+        "desc": "Continuare curs elementar."
+      },
+      {
+        "level": "B2.1",
+        "date": "11 februarie",
+        "time": "09:00",
+        "desc": "Curs avansat de germană."
+      }
+    ]
+  },
+  "services": {
+    "title": "Наши услуги",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Курсы немецкого языка",
+        "desc": "Курсы для всех уровней от A1 до C2 с международной сертификацией."
+      },
+      {
+        "icon": "🎓",
+        "title": "Международный экзамен ÖSD",
+        "desc": "Авторизованный центр сдачи экзаменов ÖSD, признанных во всём мире."
+      },
+      {
+        "icon": "⚡",
+        "title": "Интенсивная подготовка B2/C1",
+        "desc": "Интенсивные курсы для быстрого достижения продвинутых уровней."
+      },
+      {
+        "icon": "🌍",
+        "title": "Современные языки",
+        "desc": "Разнообразные языковые курсы для всех возрастов и уровней."
+      }
+    ]
+  },
+  "partner": {
+    "title": "Наш партнёр",
+    "desc": "Мы являемся авторизованным экзаменационным центром ÖSD (Österreichisches Sprachdiplom Deutsch). ÖSD признаётся в Австрии, Германии и Швейцарии.",
+    "learnMore": "Читать подробнее"
+  },
+  "ourCourses": {
+    "title": "Наши курсы",
+    "enroll": "Записаться",
+    "months": "мес.",
+    "hoursPerWeek": "ч/нед.",
+    "studentsPerGroup": "студентов",
+    "items": [
+      {
+        "level": "A1.1",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A1.2",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A2.1",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A2.2",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "B1.1",
+        "duration": 4,
+        "hours": 3,
+        "group": "6–8"
+      },
+      {
+        "level": "B1.2",
+        "duration": 4,
+        "hours": 3,
+        "group": "6–8"
+      },
+      {
+        "level": "B2.1",
+        "duration": 4,
+        "hours": 4,
+        "group": "6–8"
+      },
+      {
+        "level": "B2.2",
+        "duration": 4,
+        "hours": 4,
+        "group": "6–8"
+      }
+    ]
+  },
+  "certificate": {
+    "text": "По окончании любого курса вы получите",
+    "highlight": "сертификат",
+    "cta": "Записаться сейчас"
+  },
+  "schedule": {
+    "title": "Расписание курсов",
+    "col": {
+      "course": "Курс",
+      "level": "Уровень",
+      "days": "Дни",
+      "time": "Время"
+    },
+    "note": "* Расписание может изменяться. Уточняйте у нас.",
+    "rows": [
+      {
+        "course": "Germana",
+        "level": "A1",
+        "days": "Lun · Mier · Vin",
+        "time": "09:00 – 10:30"
+      },
+      {
+        "course": "Germana",
+        "level": "A1+",
+        "days": "Mar · Joi",
+        "time": "18:00 – 19:30"
+      },
+      {
+        "course": "Germana",
+        "level": "A2",
+        "days": "Lun · Mier",
+        "time": "18:00 – 19:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B1",
+        "days": "Mar · Joi · Sâm",
+        "time": "09:00 – 10:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B1+",
+        "days": "Lun",
+        "time": "10:00 – 11:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B2",
+        "days": "Mar · Joi",
+        "time": "09:30 – 11:00"
+      },
+      {
+        "course": "Germana",
+        "level": "C1",
+        "days": "Lun",
+        "time": "18:00 – 20:00"
+      },
+      {
+        "course": "Germana",
+        "level": "Tfl4",
+        "days": "Sâm",
+        "time": "10:00 – 12:30"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Фотогалерея",
+    "of": "из"
+  },
+  "contact": {
+    "title": "Контакты / Адрес",
+    "name": "Имя и Фамилия",
+    "email": "Адрес электронной почты",
+    "phone": "Номер телефона",
+    "message": "Ваше сообщение",
+    "send": "Отправить",
+    "sending": "Отправка…",
+    "success": "✅ Сообщение успешно отправлено!",
+    "error": "❌ Ошибка. Попробуйте ещё раз.",
+    "addressValue": "str. Independenței 1, Chișinău",
+    "phoneValue": "+373 22 000 000",
+    "emailValue": "info@german.clg.md",
+    "scheduleValue": "Пн – Пт: 9:00 – 18:00",
+    "mapTitle": "Locație"
+  },
+  "faq": {
+    "title": "Вопросы и ответы",
+    "items": [
+      {
+        "q": "Какие документы нужны для записи?",
+        "a": "Копия удостоверения личности и фотография. Оплата — наличными или банковским переводом."
+      },
+      {
+        "q": "Можно ли вернуть деньги за курс?",
+        "a": "Да, если вы откажетесь в первые 3 дня, мы вернём 80% оплаченной суммы."
+      },
+      {
+        "q": "Есть ли курсы B2/C1 для работы в Германии?",
+        "a": "Да, у нас есть интенсивные курсы B2/C1 для тех, кто хочет работать в Германии или Австрии."
+      },
+      {
+        "q": "Готовите ли вы к международным экзаменам ÖSD?",
+        "a": "Да, мы авторизованный центр ÖSD и предлагаем подготовку ко всем уровням: A1–C2."
+      },
+      {
+        "q": "Какой размер групп?",
+        "a": "В группах 6–10 человек, что обеспечивает индивидуальный подход и быстрый прогресс."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "text": "Ещё есть вопросы?",
+    "subtitle": "Свяжитесь с нами — ответим как можно скорее.",
+    "cta": "Написать нам"
+  },
+  "footer": {
+    "tagline": "Центр немецкого языка и сертификации ÖSD",
+    "navigation": "Навигация",
+    "contactTitle": "Контакты",
+    "rights": "Все права защищены."
+  }
+}

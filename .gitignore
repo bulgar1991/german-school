@@ -1,0 +1,42 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Build output
+/dist
+
+# Angular cache
+/.angular
+.angular/cache
+
+# TypeScript cache
+/tmp
+/out-tsc
+
+# Sass cache
+.sass-cache/
+
+# Logs
+npm-debug.log
+yarn-error.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Misc
+*.orig
+
+# Dependencies
+/node_modules/
