@@ -1,0 +1,20 @@
+<div class="lang-dialog">
+    <h2 class="lang-dialog__title">Select Language</h2>
+
+    <div class="lang-dialog__list">
+        @for (l of langs; track l.code) {
+            <button
+                    class="lang-dialog__opt"
+                    [class.lang-dialog__opt--active]="l.code === ls.currentLang()"
+                    (click)="pick(l.code)">
+                <img class="lang-dialog__flag" [src]="l.flag" [alt]="l.code" />
+                <span class="lang-dialog__label">{{ l.label }}</span>
+                @if (l.code === ls.currentLang()) {
+                    <svg class="lang-dialog__check" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                }
+            </button>
+        }
+    </div>
+</div>

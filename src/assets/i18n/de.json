@@ -1,0 +1,275 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "courses": "Kurse",
+    "schedule": "Stundenplan",
+    "gallery": "Galerie",
+    "services": "Leistungen",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "enrollBtn": "Einschreiben"
+  },
+  "hero": {
+    "prefix": "Sprechen Sie",
+    "highlight": "Deutsch?",
+    "subtitle": "Deutschkurse für alle Niveaus. Erfahrene Lehrkräfte, internationale ÖSD-Zertifizierung, kleine Gruppen.",
+    "cta": "Jetzt einschreiben",
+    "ctaSecondary": "Mehr erfahren"
+  },
+  "announcements": {
+    "title": "Anunțuri cursuri",
+    "from": "Din",
+    "timeLabel": "ora",
+    "enroll": "Înscrie-te",
+    "items": [
+      {
+        "level": "A1.2",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană pentru începători avansați."
+      },
+      {
+        "level": "B1.2",
+        "date": "14 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel intermediar."
+      },
+      {
+        "level": "A2.1",
+        "date": "21 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel elementar."
+      },
+      {
+        "level": "A2.2",
+        "date": "4 februarie",
+        "time": "18:00",
+        "desc": "Continuare curs elementar."
+      },
+      {
+        "level": "B2.1",
+        "date": "11 februarie",
+        "time": "09:00",
+        "desc": "Curs avansat de germană."
+      }
+    ]
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Deutschkurse",
+        "desc": "Kurse für alle Niveaus von A1 bis C2 mit internationaler Zertifizierung."
+      },
+      {
+        "icon": "🎓",
+        "title": "Internationales ÖSD-Examen",
+        "desc": "Autorisiertes ÖSD-Prüfungszentrum, weltweit anerkannt."
+      },
+      {
+        "icon": "⚡",
+        "title": "Intensivkurs B2/C1",
+        "desc": "Intensivkurse für höhere Niveaus in kurzer Zeit."
+      },
+      {
+        "icon": "🌍",
+        "title": "Moderne Sprachen",
+        "desc": "Vielfältiges Angebot an modernen Sprachen für alle Altersgruppen."
+      }
+    ]
+  },
+  "partner": {
+    "title": "Unser Partner",
+    "desc": "Wir sind ein autorisiertes ÖSD-Prüfungszentrum (Österreichisches Sprachdiplom Deutsch). ÖSD wird in Österreich, Deutschland und der Schweiz anerkannt.",
+    "learnMore": "Mehr lesen"
+  },
+  "ourCourses": {
+    "title": "Unsere Kurse",
+    "enroll": "Einschreiben",
+    "months": "Monate",
+    "hoursPerWeek": "Std/Woche",
+    "studentsPerGroup": "Teilnehmer",
+    "items": [
+      {
+        "level": "A1.1",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A1.2",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A2.1",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "A2.2",
+        "duration": 3,
+        "hours": 3,
+        "group": "8–10"
+      },
+      {
+        "level": "B1.1",
+        "duration": 4,
+        "hours": 3,
+        "group": "6–8"
+      },
+      {
+        "level": "B1.2",
+        "duration": 4,
+        "hours": 3,
+        "group": "6–8"
+      },
+      {
+        "level": "B2.1",
+        "duration": 4,
+        "hours": 4,
+        "group": "6–8"
+      },
+      {
+        "level": "B2.2",
+        "duration": 4,
+        "hours": 4,
+        "group": "6–8"
+      }
+    ]
+  },
+  "certificate": {
+    "text": "Nach Abschluss jedes Kurses erhalten Sie ein",
+    "highlight": "Zertifikat",
+    "cta": "Jetzt einschreiben"
+  },
+  "schedule": {
+    "title": "Stundenplan",
+    "col": {
+      "course": "Kurs",
+      "level": "Niveau",
+      "days": "Tage",
+      "time": "Uhrzeit"
+    },
+    "note": "* Der Stundenplan kann sich ändern. Bitte kontaktieren Sie uns zur Bestätigung.",
+    "rows": [
+      {
+        "course": "Germana",
+        "level": "A1",
+        "days": "Lun · Mier · Vin",
+        "time": "09:00 – 10:30"
+      },
+      {
+        "course": "Germana",
+        "level": "A1+",
+        "days": "Mar · Joi",
+        "time": "18:00 – 19:30"
+      },
+      {
+        "course": "Germana",
+        "level": "A2",
+        "days": "Lun · Mier",
+        "time": "18:00 – 19:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B1",
+        "days": "Mar · Joi · Sâm",
+        "time": "09:00 – 10:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B1+",
+        "days": "Lun",
+        "time": "10:00 – 11:30"
+      },
+      {
+        "course": "Germana",
+        "level": "B2",
+        "days": "Mar · Joi",
+        "time": "09:30 – 11:00"
+      },
+      {
+        "course": "Germana",
+        "level": "C1",
+        "days": "Lun",
+        "time": "18:00 – 20:00"
+      },
+      {
+        "course": "Germana",
+        "level": "Tfl4",
+        "days": "Sâm",
+        "time": "10:00 – 12:30"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Fotogalerie",
+    "of": "von"
+  },
+  "contact": {
+    "title": "Kontakt / Adresse",
+    "name": "Vor- und Nachname",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "message": "Ihre Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet…",
+    "success": "✅ Nachricht erfolgreich gesendet!",
+    "error": "❌ Fehler. Bitte erneut versuchen.",
+    "addressValue": "str. Independenței 1, Chișinău",
+    "phoneValue": "+373 22 000 000",
+    "emailValue": "info@german.clg.md",
+    "scheduleValue": "Mo – Fr: 9:00 – 18:00",
+    "mapTitle": "Locație"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Welche Unterlagen werden für die Anmeldung benötigt?",
+        "a": "Eine Kopie Ihres Personalausweises und ein Passfoto."
+      },
+      {
+        "q": "Kann ich das Kursgeld zurückbekommen?",
+        "a": "Ja, innerhalb von 3 Tagen nach Kursbeginn erstatten wir 80% des gezahlten Betrags."
+      },
+      {
+        "q": "Gibt es B2/C1-Kurse für die Arbeit in Deutschland?",
+        "a": "Ja, wir bieten Intensivkurse B2/C1 für Personen an, die in Deutschland oder Österreich arbeiten möchten."
+      },
+      {
+        "q": "Bereiten Sie auf internationale ÖSD-Prüfungen vor?",
+        "a": "Ja, wir sind ein autorisiertes ÖSD-Zentrum und bieten Vorbereitung für alle Niveaus an."
+      },
+      {
+        "q": "Wie groß sind die Gruppen?",
+        "a": "Die Gruppen haben 6–10 Teilnehmer, was individuelle Aufmerksamkeit ermöglicht."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "text": "Noch Fragen?",
+    "subtitle": "Kontaktieren Sie uns und wir antworten so schnell wie möglich.",
+    "cta": "Kontaktieren Sie uns"
+  },
+  "footer": {
+    "tagline": "Deutschsprachzentrum und ÖSD-Zertifizierung",
+    "navigation": "Navigation",
+    "contactTitle": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "comingSoon": {
+    "title": "Demnächst",
+    "subtitle": "Diese Seite ist noch in Bearbeitung."
+  },
+  "seo": {
+    "home": {
+      "title": "CLG Deutsch – Deutschkurse",
+      "description": "Deutschkurse A1–C2, ÖSD-Zertifizierung, Chișinău."
+    }
+  }
+}

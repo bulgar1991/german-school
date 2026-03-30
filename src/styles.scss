@@ -1,10 +1,11 @@
 @use '@angular/material' as material;
+@use 'assets/fonts/icons.css';
+@include material.elevation-classes();
+@include material.app-background();
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@include material.elevation-classes();
-@include material.app-background();
 
 @layer base {
   html {
