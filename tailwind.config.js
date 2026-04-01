@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       colors: {
         'light-black':   '#2D2D2D',
