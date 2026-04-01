@@ -275,5 +275,11 @@
       "title": "CLG Deutsch – Cursuri de Limbă Germană",
       "description": "Cursuri de germană A1–C2, certificare ÖSD, Chișinău."
     }
+  },
+  "banner": {
+    "titlePrefix": "Sprechen Sie",
+    "titleHighlight": "Deutsch?",
+    "description": "Te ajutăm să stăpânești cât mai repede și mai bine limba germană.\nMetodologia noastră are la bază sistemul conversațional:\n\"ascultă, vezi, repetă și vorbește\"",
+    "imageAlt": "Studenți care citesc și învață germana"
   }
 }
