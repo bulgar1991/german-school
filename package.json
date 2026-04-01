@@ -10,7 +10,8 @@
     "build:deploy": "npm run build:prod && npm run deploy:ftp",
     "deploy:vercel": "vercel --prod",
     "prettier": "npx prettier --write .",
-    "lint": "ng lint --fix"
+    "lint": "ng lint --fix",
+    "generate-fonts": "fantasticon src/assets/icons/font-icons -o src/assets/fonts"
   },
   "dependencies": {
     "@angular/animations": "^21.1.1",
@@ -25,6 +26,7 @@
     "@angular/router": "^21.1.1",
     "@ngx-translate/core": "^16.0.0",
     "@ngx-translate/http-loader": "^16.0.0",
+    "fantasticon": "^3.0.0",
     "rxjs": "~7.8.0",
     "swiper": "^11.0.0",
     "tslib": "^2.3.0",

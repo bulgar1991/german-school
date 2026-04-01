@@ -1,0 +1,19 @@
+:host {
+  .ls {
+    &__btn {
+      @apply flex font-semibold cursor-pointer rounded hover:bg-white/20 transition items-center gap-2 bg-white/10 border border-solid border-white/15 text-white py-2 px-2 text-sm;
+    }
+
+    &__flag {
+      @apply w-5 h-5 rounded-full object-cover shrink-0;
+    }
+
+    &__caret {
+      @apply transition shrink-0;
+    }
+  }
+
+  .icon {
+    @apply text-sm;
+  }
+}

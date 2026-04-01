@@ -1,0 +1,236 @@
+.header {
+  @apply sticky top-0 left-0 z-50 py-7 bg-light-black border-b border-solid border-medium-gray;
+
+  &--scrolled {
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  &__inner {
+    @apply flex items-center gap-6;
+  }
+
+  &__logo {
+    @apply flex items-center no-underline;
+
+    &-image {
+      @apply w-auto h-[70px] object-contain;
+    }
+  }
+
+
+
+  // ── Desktop nav ──────────────────────────────────────────────────────────
+  &__nav {
+    display: none;
+    flex: 1;
+
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__nav-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: color 0.2s, background 0.2s;
+
+    &:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    &--active {
+      color: #a855f7;
+      font-weight: 600;
+    }
+  }
+
+  // ── Right actions ────────────────────────────────────────────────────────
+  &__actions {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    flex-shrink: 0;
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s;
+
+    svg { flex-shrink: 0; }
+
+    &:hover { color: #fff; }
+  }
+
+  // ── Hamburger ────────────────────────────────────────────────────────────
+  &__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    margin-left: auto;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: transform 0.25s, opacity 0.25s;
+    }
+  }
+}
+
+// ── Sidebar overlay ──────────────────────────────────────────────────────────
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 200;
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.2s ease;
+}
+
+// ── Sidebar panel ────────────────────────────────────────────────────────────
+.sidebar {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  width: min(320px, 85vw);
+  background: #1a1a2e;
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: -8px 0 40px rgba(0, 0, 0, 0.4);
+  animation: slideIn 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    flex-shrink: 0;
+  }
+
+  &__logo {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+
+    strong { color: #a855f7; }
+  }
+
+  &__logo {
+    text-decoration: none;
+  }
+
+  &__logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.07);
+    border: none;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover { background: rgba(168, 85, 247, 0.25); color: #fff; }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0;
+    flex: 1;
+  }
+
+  &__link {
+    display: block;
+    padding: 0.875rem 1.5rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: color 0.2s, background 0.2s, border-color 0.2s;
+
+    &:hover {
+      color: #fff;
+      background: rgba(168, 85, 247, 0.12);
+      border-left-color: #a855f7;
+    }
+
+    &--active {
+      color: #a855f7;
+      border-left-color: #a855f7;
+      font-weight: 600;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    flex-shrink: 0;
+  }
+}
+
+// ── Animations ───────────────────────────────────────────────────────────────
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}

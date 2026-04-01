@@ -1,0 +1,5 @@
+<button class="ls__btn" (click)="open()">
+    <img class="ls__flag" [src]="ls.getLangMeta(ls.currentLang()).flag" [alt]="ls.currentLang()" />
+    <span>{{ ls.getLangMeta(ls.currentLang()).label }}</span>
+    <i class="icon icon-chevron-down-solid-full"></i>
+</button>
