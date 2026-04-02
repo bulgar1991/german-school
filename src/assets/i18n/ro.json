@@ -58,31 +58,6 @@
       }
     ]
   },
-  "services": {
-    "title": "Ce servicii oferim",
-    "items": [
-      {
-        "icon": "📚",
-        "title": "Cursuri limbi germane",
-        "desc": "Cursuri pentru toate nivelurile, de la A1 până la C2, cu certificare internațională."
-      },
-      {
-        "icon": "🎓",
-        "title": "Examen internațional ÖSD",
-        "desc": "Centru autorizat pentru susținerea examenelor ÖSD recunoscute mondial."
-      },
-      {
-        "icon": "⚡",
-        "title": "Pregătire intensivă B2/C1",
-        "desc": "Cursuri intensive pentru accederea la niveluri superioare rapid."
-      },
-      {
-        "icon": "🌍",
-        "title": "Cursuri limbi moderne",
-        "desc": "Ofertă diversificată de limbi moderne pentru toate vârstele."
-      }
-    ]
-  },
   "partner": {
     "title": "Partenerul nostru",
     "desc": "Suntem centru autorizat de examinare ÖSD (Österreichisches Sprachdiplom Deutsch). ÖSD este recunoscut în Austria, Germania și Elveția și acceptat de universități și angajatori din întreaga lume.",
@@ -281,5 +256,23 @@
     "titleHighlight": "Deutsch?",
     "description": "Te ajutăm să stăpânești cât mai repede și mai bine limba germană.\nMetodologia noastră are la bază sistemul conversațional:\n\"ascultă, vezi, repetă și vorbește\"",
     "imageAlt": "Studenți care citesc și învață germana"
+  },
+  "services": {
+    "title": "Ce servicii oferim",
+    "readMore": "Citește mai mult",
+    "items": [
+      {
+        "title": "Cursuri de limbă germană A1-C1"
+      },
+      {
+        "title": "Examen internațional ÖSD"
+      },
+      {
+        "title": "Pregătire examene A1 – C1, Test DAF, DSD1, DSD2"
+      },
+      {
+        "title": "Cursuri de limbi moderne"
+      }
+    ]
   }
 }

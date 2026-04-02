@@ -1,21 +1,29 @@
 <section class="banner">
   <div class="container-screen-4xl mx-auto md:px-8 px-4">
-    <div class="banner__inner relative overflow-hidden rounded-3xl before:absolute before:inset-0 before:bg-light-black/15 before:z-10">
+    <div
+      class="banner__inner relative overflow-hidden rounded-3xl before:absolute before:inset-0 before:bg-light-black/15 before:z-10">
       <div class="banner__content 3xl:p-16 2xl:p-14 xl:p-10 lg:p-8 md:p-6 p-4 min-h-[600px] relative z-20">
         <div class="flex justify-center items-center gap-5">
           <div class="banner__title-container">
             <h2 class="banner__title text-light-black text-6xl">{{ 'banner.titlePrefix' | translate }}</h2>
           </div>
-          <div class="banner__highlight relative flex justify-center items-center text-center min-w-[302px] min-h-[114px]">
+          <div
+            class="banner__highlight relative flex justify-center items-center text-center min-w-[302px] min-h-[114px]">
             <span class="banner__title-highlight text-6xl text-light-black z-10 relative">
               {{ 'banner.titleHighlight' | translate }}
             </span>
-            <img class="banner__highlight-img absolute -left-3 top-3 object-contain" src="assets/images/banners/banner-highlight.png" alt="Highlight" aria-hidden="true" />
+            <img
+              class="banner__highlight-img absolute -left-3 top-3 object-contain"
+              src="assets/images/banners/banner-highlight.png"
+              alt="Highlight"
+              aria-hidden="true" />
           </div>
         </div>
 
         <div class="banner__description-container flex justify-center items-center text-center mt-8">
-          <p class="banner__description max-w-[700px] text-[22px] text-light-black">{{ 'banner.description' | translate }}</p>
+          <p class="banner__description max-w-[700px] text-[22px] text-light-black">{{
+            'banner.description' | translate
+          }}</p>
         </div>
       </div>
 
@@ -24,8 +32,7 @@
           class="banner__image object-cover w-full h-full"
           src="assets/images/banners/banner.jpg"
           [alt]="'banner.imageAlt' | translate"
-          loading="eager"
-        />
+          loading="eager" />
       </div>
     </div>
   </div>

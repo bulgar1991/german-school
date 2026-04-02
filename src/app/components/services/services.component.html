@@ -1,0 +1,41 @@
+<section class="services">
+  <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+    <div class="services__header">
+      <h2 class="services__title">{{ 'services.title' | translate }}</h2>
+    </div>
+
+    <swiper-container
+      slides-per-view="1.2"
+      [space-between]="spaceBetween"
+      [pagination]="{ clickable: true }"
+      [navigation]="{ prevEl: '#services-prev', nextEl: '#services-next' }"
+      [breakpoints]="{
+        '640': { slidesPerView: 2, spaceBetween: 16 },
+        '1024': { slidesPerView: 3, spaceBetween: 24 },
+        '1280': { slidesPerView: 4, spaceBetween: 24 },
+      }"
+      class="services__swiper">
+      @for (service of services; track service.link) {
+        <swiper-slide>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img [src]="service.icon" [alt]="service.titleKey | translate" />
+            </div>
+            <h3 class="service-card__title">{{ service.titleKey | translate }}</h3>
+            <a class="service-card__link" [routerLink]="service.link">
+              {{ 'services.readMore' | translate }}
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </swiper-slide>
+      }
+    </swiper-container>
+  </div>
+</section>
