@@ -1,0 +1,13 @@
+.full-banner {
+  width: 100%;
+  line-height: 0;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+  }
+}
