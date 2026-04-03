@@ -1,0 +1,36 @@
+<section class="schedule">
+  <div class="container">
+    <h2 class="schedule__title">{{ 'schedule.title' | translate }}</h2>
+
+    <div class="schedule__table-wrap">
+      <table class="schedule__table">
+        <thead>
+          <tr>
+            <th>{{ 'schedule.col.course' | translate }}</th>
+            <th>{{ 'schedule.col.level' | translate }}</th>
+            <th>{{ 'schedule.col.days' | translate }}</th>
+            <th>{{ 'schedule.col.hours' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of rows; track row.level) {
+            <tr>
+              <td>{{ row.course | translate }}</td>
+              <td>{{ row.level }}</td>
+              <td [innerHTML]="row.days | translate"></td>
+              <td [innerHTML]="row.hours | translate"></td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <p class="schedule__note">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.2" />
+        <path d="M8 5v4M8 11v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+      {{ 'schedule.note' | translate }}
+    </p>
+  </div>
+</section>

@@ -112,63 +112,52 @@
   },
   "schedule": {
     "title": "Orarul cursurilor",
+    "course": "Germana",
     "col": {
       "course": "Curs",
       "level": "Nivel",
       "days": "Zile",
-      "time": "Ora"
+      "hours": "Ore"
     },
-    "note": "* Orarul poate fi modificat. Contactați-ne pentru confirmare.",
-    "rows": [
-      {
-        "course": "Germana",
-        "level": "A1",
-        "days": "Lun · Mier · Vin",
-        "time": "09:00 – 10:30"
+    "note": "Ofertele noastre educationale se adresează liceenilor, studenților, oamenilor de afaceri și tuturor celor care doresc să învețe limba germană sau alte limbi moderne și să obțină un certificat de limbă germană recunoscut internațional.",
+    "rows": {
+      "a11": {
+        "days": "Luni, miercuri, vineri",
+        "hours": "16-30"
       },
-      {
-        "course": "Germana",
-        "level": "A1+",
-        "days": "Mar · Joi",
-        "time": "18:00 – 19:30"
+      "a12": {
+        "days": "Marți, joi, sâmbătă<br>Marți, joi, sâmbătă",
+        "hours": "16-30 / 10-00 (s)<br>18-30 / 13-30 (s)"
       },
-      {
-        "course": "Germana",
-        "level": "A2",
-        "days": "Lun · Mier",
-        "time": "18:00 – 19:30"
+      "a21": {
+        "days": "Luni, miercuri, vineri",
+        "hours": "18-30"
       },
-      {
-        "course": "Germana",
-        "level": "B1",
-        "days": "Mar · Joi · Sâm",
-        "time": "09:00 – 10:30"
+      "a22": {
+        "days": "Luni, miercuri, vineri<br>Marți, joi, sâmbătă",
+        "hours": "18-30<br>16-30 / 12-00 (s)"
       },
-      {
-        "course": "Germana",
-        "level": "B1+",
-        "days": "Lun",
-        "time": "10:00 – 11:30"
+      "b11": {
+        "days": "Marți, sâmbătă",
+        "hours": "18-30 / 12-00 (s)"
       },
-      {
-        "course": "Germana",
-        "level": "B2",
-        "days": "Mar · Joi",
-        "time": "09:30 – 11:00"
+      "b12": {
+        "days": "Luni, miercuri, vineri",
+        "hours": "16-30"
       },
-      {
-        "course": "Germana",
-        "level": "C1",
-        "days": "Lun",
-        "time": "18:00 – 20:00"
+      "b21": {
+        "days": "-",
+        "hours": "-"
       },
-      {
-        "course": "Germana",
-        "level": "Tfl4",
-        "days": "Sâm",
-        "time": "10:00 – 12:30"
+      "b22": {
+        "days": "Joi, sâmbătă",
+        "hours": "18-30 / 10-00 (s)"
+      },
+      "c11": {
+        "days": "Joi, sâmbătă",
+        "hours": "18-30 / 10-00 (s)"
       }
-    ]
+    }
   },
   "gallery": {
     "title": "Galerie foto",
@@ -259,5 +248,52 @@
         "title": "Cursuri de limbi moderne"
       }
     ]
+  },
+  "courses": {
+    "title": "Cursurile noastre",
+    "subtitle": "Cursuri de limbă germană",
+    "cta": "Lăsați o cerere",
+    "items": {
+      "a11": {
+        "level": "Nivel - începător",
+        "duration": "Durata de la 1-3 luni",
+        "format": "În grup / individual"
+      },
+      "a12": {
+        "level": "Nivel - începător",
+        "duration": "Durata de la 1-4 luni",
+        "format": "În grup / individual"
+      },
+      "a21": {
+        "level": "Nivel - pre-intermediar",
+        "duration": "Durata de la 3-5 luni",
+        "format": "În grup / individual"
+      },
+      "a22": {
+        "level": "Nivel - pre-intermediar",
+        "duration": "Durata de la 3-6 luni",
+        "format": "În grup / individual"
+      },
+      "b11": {
+        "level": "Nivel - intermediar",
+        "duration": "Durata de la 4-6 luni",
+        "format": "În grup / individual"
+      },
+      "b12": {
+        "level": "Nivel - intermediar",
+        "duration": "Durata de la 4-6 luni",
+        "format": "În grup / individual"
+      },
+      "b21": {
+        "level": "Nivel - superior",
+        "duration": "Durata de la 5-8 luni",
+        "format": "În grup / individual"
+      },
+      "b22": {
+        "level": "Nivel - superior",
+        "duration": "Durata de la 5-8 luni",
+        "format": "În grup / individual"
+      }
+    }
   }
 }
