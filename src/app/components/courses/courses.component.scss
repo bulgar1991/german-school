@@ -1,0 +1,129 @@
+.courses {
+  background: #2d2d2d;
+  padding: 3.5rem 0 4rem;
+
+  // ── Header row ─────────────────────────────────────────────────────────────
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+  }
+
+  // ── Arrows ─────────────────────────────────────────────────────────────────
+  &__arrows {
+    display: flex;
+    gap: 0.625rem;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(147, 112, 219, 0.5);
+    background: transparent;
+    color: #9370db;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    flex-shrink: 0;
+
+    &:hover {
+      background: rgba(147, 112, 219, 0.15);
+      border-color: #9370db;
+      color: #fff;
+    }
+  }
+
+  // ── Swiper ─────────────────────────────────────────────────────────────────
+  &__swiper {
+    width: 100%;
+    padding-bottom: 2.5rem !important;
+
+    --swiper-pagination-color: #9370db;
+    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.3);
+    --swiper-pagination-bullet-inactive-opacity: 1;
+  }
+}
+
+// ── Course card ───────────────────────────────────────────────────────────────
+.course-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 320px;
+
+  // ── Level ──────────────────────────────────────────────────────────────────
+  &__level {
+    font-size: clamp(2.5rem, 5vw, 3.25rem);
+    font-weight: 800;
+    color: #7c3aed;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  // ── Title ──────────────────────────────────────────────────────────────────
+  &__title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.35;
+    margin: 0 0 1.25rem;
+  }
+
+  // ── Feature list ───────────────────────────────────────────────────────────
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9375rem;
+    color: #1a1a1a;
+  }
+
+  &__diamond {
+    flex-shrink: 0;
+  }
+
+  // ── CTA button ─────────────────────────────────────────────────────────────
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: #7c3aed;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background 0.2s;
+    text-align: center;
+
+    &:hover {
+      background: #6d28d9;
+    }
+  }
+}

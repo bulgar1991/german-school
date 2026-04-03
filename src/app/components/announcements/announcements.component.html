@@ -1,0 +1,48 @@
+<section class="announcements">
+  <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+    <div class="announcements__header">
+      <h2 class="announcements__title">{{ 'announcements.title' | translate }}</h2>
+    </div>
+
+    <swiper-container
+      slides-per-view="1.2"
+      [space-between]="spaceBetween"
+      [pagination]="{ clickable: true }"
+      [navigation]="{ prevEl: '#ann-prev', nextEl: '#ann-next' }"
+      [breakpoints]="{
+        '640': { slidesPerView: 2, spaceBetween: 16 },
+        '1024': { slidesPerView: 3, spaceBetween: 24 },
+        '1280': { slidesPerView: 4, spaceBetween: 24 },
+      }"
+      class="announcements__swiper">
+      @for (item of announcements; track item.link) {
+        <swiper-slide>
+          <div class="ann-card">
+            <!-- Level thumbnail -->
+            <div class="ann-card__thumb">
+              <span class="ann-card__level">{{ item.level }}</span>
+              <span class="ann-card__subtitle">{{ 'announcements.courseLabel' | translate }}</span>
+            </div>
+
+            <!-- Body -->
+            <div class="ann-card__body">
+              <h3 class="ann-card__title">{{ item.titleKey | translate }}</h3>
+              <p class="ann-card__desc">{{ item.descKey | translate }}</p>
+              <a class="ann-card__link" [routerLink]="item.link">
+                {{ 'announcements.readMore' | translate }}
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M3 7h8M7.5 3.5L11 7l-3.5 3.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </swiper-slide>
+      }
+    </swiper-container>
+  </div>
+</section>

@@ -6,5 +6,6 @@ import {TranslateModule} from "@ngx-translate/core";
   imports: [TranslateModule],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
+  standalone: true,
 })
 export class BannerComponent {}
