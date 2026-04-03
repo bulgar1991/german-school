@@ -22,39 +22,24 @@
   },
   "announcements": {
     "title": "Anunțuri cursuri",
-    "from": "Din",
-    "timeLabel": "ora",
-    "enroll": "Înscrie-te",
+    "courseLabel": "Cursuri de limbă Germană",
+    "readMore": "Citește mai mult",
     "items": [
       {
-        "level": "A1.2",
-        "date": "1 ianuarie",
-        "time": "18:00",
-        "desc": "Curs de germană pentru începători avansați."
+        "title": "A1.2 - Curs de germană, din 31 ianuarie, ora 16.30",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
       },
       {
-        "level": "B1.2",
-        "date": "14 ianuarie",
-        "time": "18:00",
-        "desc": "Curs de germană nivel intermediar."
+        "title": "B1.2 - Curs de germană, din 14 ianuarie, ora 16.45",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
       },
       {
-        "level": "A2.1",
-        "date": "21 ianuarie",
-        "time": "18:00",
-        "desc": "Curs de germană nivel elementar."
+        "title": "A1.2 - Curs de germană, din 10 ianuarie, ora 18.30",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
       },
       {
-        "level": "A2.2",
-        "date": "4 februarie",
-        "time": "18:00",
-        "desc": "Continuare curs elementar."
-      },
-      {
-        "level": "B2.1",
-        "date": "11 februarie",
-        "time": "09:00",
-        "desc": "Curs avansat de germană."
+        "title": "A2.1 - Curs de germană, din 11 ianuarie",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
       }
     ]
   },
