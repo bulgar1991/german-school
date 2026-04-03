@@ -1,0 +1,27 @@
+<section class="faq">
+  <div class="container">
+
+    <h2 class="faq__title">{{ 'faq.title' | translate }}</h2>
+
+    <div class="faq__grid">
+      @for (i of items; track i) {
+        <div class="faq__item" [class.faq__item--open]="openIndex() === i">
+          <button class="faq__question" (click)="toggle(i)" [attr.aria-expanded]="openIndex() === i">
+            <span>{{ ('faq.items.' + i + '.q') | translate }}</span>
+            <span class="faq__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+                <path [attr.d]="openIndex() === i ? 'M6 10h8' : 'M10 6v8M6 10h8'"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          @if (openIndex() === i) {
+            <div class="faq__answer">{{ ('faq.items.' + i + '.a') | translate }}</div>
+          }
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

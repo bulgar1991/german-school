@@ -161,46 +161,39 @@
   },
   "gallery": {
     "title": "Galerie foto",
-    "of": "din"
+    "viewAll": "Vezi toată galeria"
   },
   "contact": {
-    "title": "Contacte / Adresă",
-    "name": "Prenume și Nume",
-    "email": "Adresa Email",
-    "phone": "Număr de Telefon",
-    "message": "Mesajul tău",
-    "send": "Trimite mesajul",
-    "sending": "Se trimite…",
-    "success": "✅ Mesajul a fost trimis! Vă vom contacta în curând.",
-    "error": "❌ Eroare la trimitere. Încercați din nou.",
-    "addressValue": "str. Independenței 1, Chișinău",
-    "phoneValue": "+373 22 000 000",
-    "emailValue": "info@german.clg.md",
-    "scheduleValue": "Lun – Vin: 9:00 – 18:00",
-    "mapTitle": "Locație"
+    "title": "Contacte / Adresa",
+    "address": "str. Mitropolit Petru Movilă, nr.23/3 Oficiu 3",
+    "mapBtn": "Deschide harta"
   },
   "faq": {
     "title": "Întrebări și răspunsuri",
     "items": [
       {
-        "q": "Ce acte sunt necesare pentru înscriere?",
-        "a": "O copie a buletinului de identitate și o fotografie tip buletin. Plata se poate face în numerar sau prin transfer bancar."
+        "q": "De ce am nevoie pentru începerea cursurilor ?",
+        "a": "Pentru înscrierea la cursuri aveți nevoie de un buletin de identitate și de achitarea taxei de școlarizare. Vă rugăm să contactați secretariatul pentru detalii."
       },
       {
-        "q": "Se pot returna banii dacă renunț la curs?",
-        "a": "Da, dacă renunțați în primele 3 zile de la începerea cursului, returnăm 80% din suma achitată."
+        "q": "Ce înseamna școala CLG și dece ar trebui să aleg anume această școală ?",
+        "a": "CLG înseamnă Centrul de Limbi Germane. Alegerea noastră este justificată de profesori calificați, grupe mici și certificare internațională ÖSD."
       },
       {
-        "q": "Există cursuri B2/C1 pentru angajare în Germania?",
-        "a": "Da, oferim cursuri intensive B2/C1 pentru persoanele care doresc să lucreze în Germania sau Austria."
+        "q": "Se vor returna banii dacă lipsit de la o lecție ?",
+        "a": "Lecțiile absente nu se compensează financiar, dar pot fi recuperate în cazuri excepționale cu acordul profesorului."
       },
       {
-        "q": "Pregătiți pentru examene ÖSD internaționale?",
-        "a": "Suntem centru autorizat ÖSD și oferim pregătire pentru toate nivelurile: A1, A2, B1, B2, C1, C2."
+        "q": "Profesorii dau teme pentru acasă ?",
+        "a": "Da, temele pentru acasă sunt parte din procesul de studiu și ajută la consolidarea cunoștințelor acumulate la ore."
       },
       {
-        "q": "Cât de mari sunt grupele?",
-        "a": "Grupele au 6–10 cursanți, ceea ce asigură atenție individuală și progres rapid."
+        "q": "Care este nivelul de pregătire profesională a profesorilor ?",
+        "a": "Toți profesorii noștri au studii superioare filologice și experiență de predare de cel puțin 5 ani, unii deținând certificate internaționale."
+      },
+      {
+        "q": "Pregătiți pentru examene internaționale de limbi străine ?",
+        "a": "Da, suntem centru autorizat ÖSD și pregătim studenți pentru toate nivelurile de examinare, de la A1 la C1."
       }
     ]
   },
@@ -295,5 +288,14 @@
         "format": "În grup / individual"
       }
     }
+  },
+  "ctaWhatsapp": {
+    "title": "Mai aveți întrebări?",
+    "desc": "Expediați un mesaj pe whatsapp și vă vom răspunde cu plăcere la toate întrebările dumneavoastră.",
+    "btn": "Whatsapp"
+  },
+  "certificateBanner": {
+    "prefix": "La finalizarea oricăruia dintre cursuri veți primi",
+    "highlight": "certificat"
   }
 }

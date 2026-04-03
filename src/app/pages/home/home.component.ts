@@ -5,6 +5,10 @@ import { AnnouncementsComponent } from '@components/announcements/announcements.
 import { CoursesComponent } from '@components/courses/courses.component'
 import { FullBannerComponent } from '@components/full-banner/full-banner.component'
 import { ScheduleComponent } from '@components/schedule/schedule.component'
+import { PartnerComponent } from '@components/partner/partner.component'
+import { GalleryComponent } from '@components/gallery/gallery.component'
+import { ContactComponent } from '@components/contact/contact.component'
+import { FaqComponent } from '@components/faq/faq.component'
 
 @Component({
   selector: 'app-home',
@@ -15,6 +19,10 @@ import { ScheduleComponent } from '@components/schedule/schedule.component'
     CoursesComponent,
     FullBannerComponent,
     ScheduleComponent,
+    PartnerComponent,
+    GalleryComponent,
+    ContactComponent,
+    FaqComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

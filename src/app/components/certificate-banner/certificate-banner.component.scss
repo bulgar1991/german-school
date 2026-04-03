@@ -1,0 +1,74 @@
+.cert-banner {
+  background: #2d2d2d;
+  padding: 2rem 0 3.5rem;
+
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #7c3aed;
+    border-radius: 20px;
+    padding: 3rem 3.5rem;
+    overflow: hidden;
+    min-height: 260px;
+
+    @media (max-width: 768px) {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  // ── Sparkles ────────────────────────────────────────────────────────────────
+  &__spark {
+    position: absolute;
+    pointer-events: none;
+
+    &--tr { top: 2rem; right: 40%; opacity: 0.4; }
+    &--bc { bottom: 1.5rem; left: 55%; opacity: 0.9; }
+  }
+
+  // ── Body ────────────────────────────────────────────────────────────────────
+  &__body {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+  }
+
+  &__title {
+    font-size: clamp(1.375rem, 3vw, 1.875rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  &__highlight {
+    display: inline-block;
+    background: #f59e0b;
+    color: #1a1a1a;
+    font-weight: 700;
+    padding: 0.1em 0.6em 0.15em;
+    border-radius: 100px;
+    margin-top: 0.25rem;
+  }
+
+  // ── Image ────────────────────────────────────────────────────────────────────
+  &__image-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 115%;
+    pointer-events: none;
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      object-position: bottom right;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
