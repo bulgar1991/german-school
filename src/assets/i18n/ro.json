@@ -210,10 +210,13 @@
     "cta": "Contactează-ne"
   },
   "footer": {
-    "tagline": "Centru de limbi germane și certificare ÖSD",
-    "navigation": "Navigare",
-    "contactTitle": "Contact",
-    "rights": "Toate drepturile rezervate."
+    "copy": "© {{ year }} \"Aster-Service\" SRL Toate drepturile rezervate",
+    "nav": {
+      "announcements": "Anunțuri cursuri",
+      "partner": "Partenerul nostru",
+      "gallery": "Galerie foto",
+      "contact": "Contacte / Adresa"
+    }
   },
   "comingSoon": {
     "title": "În curând",
@@ -295,5 +298,34 @@
         "format": "În grup / individual"
       }
     }
+  },
+  "enroll": {
+    "step1": "Pasul 1",
+    "step2": "Pasul 2",
+    "step1Desc": "Introduceți informațiile dvs pentru a continua.",
+    "step2Desc": "Confirmați cererea dvs.",
+    "stepPersonal": "Informații personale",
+    "stepFinalize": "Finalizare",
+    "lastName": "Numele",
+    "lastNamePlaceholder": "Introduceți numele dvs",
+    "firstName": "Prenumele",
+    "firstNamePlaceholder": "Introduceți prenumele dvs",
+    "phone": "Număr de telefon",
+    "phonePlaceholder": "Introduceți numărul dvs de telefon",
+    "email": "Adresa de e-mail",
+    "emailPlaceholder": "Introduceți adresa dvs de e-mail",
+    "message": "Informații adiționale",
+    "messagePlaceholder": "Lăsați un comentariu",
+    "terms": "Am citit și sunt de acord cu <a href=\"/termeni\" target=\"_blank\">termeni și condiții &amp; politica de confidențialitate</a>",
+    "termsError": "Trebuie să acceptați termenii și condițiile.",
+    "cancel": "< Anulare",
+    "back": "< Înapoi",
+    "next": "Următorul pas",
+    "submit": "Trimite cererea",
+    "sending": "Se trimite…",
+    "close": "Închide",
+    "successTitle": "Cerere trimisă!",
+    "successDesc": "Vă vom contacta în cel mai scurt timp posibil.",
+    "errorMsg": "A apărut o eroare. Vă rugăm să încercați din nou."
   }
 }
