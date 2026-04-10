@@ -1,20 +1,25 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
-import { RouterLink } from '@angular/router'
-import { TranslateModule } from '@ngx-translate/core'
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core'
+import { TranslateModule, TranslateService } from '@ngx-translate/core'
+import { MatDialog } from '@angular/material/dialog'
 import { register } from 'swiper/element/bundle'
 import { Course } from '@/interfaces'
+import { EnrollDialogComponent } from '@components/enroll-dialog/enroll-dialog.component'
+import { EnrollDialogData } from '@/interfaces'
 
 register()
 
 @Component({
   selector: 'app-courses',
   standalone: true,
-  imports: [TranslateModule, RouterLink],
+  imports: [TranslateModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.scss',
 })
 export class CoursesComponent {
+  private dialog = inject(MatDialog)
+  private translate = inject(TranslateService)
+
   spaceBetween = 24
 
   courses: Course[] = [
@@ -67,4 +72,19 @@ export class CoursesComponent {
       link: '/cursuri/b2-2',
     },
   ]
+
+  openEnroll(course: Course): void {
+    const data: EnrollDialogData = {
+      level: course.level,
+      titleKey: this.translate.instant(course.titleKey),
+    }
+    this.dialog.open(EnrollDialogComponent, {
+      data,
+      panelClass: 'enroll-dialog-panel',
+      width: '860px',
+      maxWidth: '95vw',
+      maxHeight: '90vh',
+      autoFocus: false,
+    })
+  }
 }

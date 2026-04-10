@@ -1,0 +1,124 @@
+.footer {
+  background: #3a3a3a;
+
+  // ── Main row ───────────────────────────────────────────────────────────────
+  &__main {
+    padding: 2.5rem 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+  }
+
+  // ── Logo ───────────────────────────────────────────────────────────────────
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  &__flags {
+    display: flex;
+    align-items: center;
+  }
+
+  &__flag {
+    width: 32px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    &:not(:first-child) {
+      margin-left: -6px;
+    }
+  }
+
+  &__logo-text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  // ── Nav ────────────────────────────────────────────────────────────────────
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__nav-link {
+    padding: 0.4rem 0.875rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9375rem;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: color 0.2s, background 0.2s;
+
+    &:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  // ── Socials ────────────────────────────────────────────────────────────────
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  // ── Bottom bar ─────────────────────────────────────────────────────────────
+  &__bottom {
+    background: #1a1a1a;
+    padding: 1rem 0;
+  }
+
+  &__copy {
+    text-align: center;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0;
+  }
+}

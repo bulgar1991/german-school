@@ -57,9 +57,9 @@
               }
             </ul>
 
-            <a class="course-card__btn" [routerLink]="course.link">
+            <button class="course-card__btn" (click)="openEnroll(course)">
               {{ 'courses.cta' | translate }}
-            </a>
+            </button>
           </div>
         </swiper-slide>
       }
