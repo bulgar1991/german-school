@@ -164,20 +164,9 @@
     "of": "din"
   },
   "contact": {
-    "title": "Contacte / Adresă",
-    "name": "Prenume și Nume",
-    "email": "Adresa Email",
-    "phone": "Număr de Telefon",
-    "message": "Mesajul tău",
-    "send": "Trimite mesajul",
-    "sending": "Se trimite…",
-    "success": "✅ Mesajul a fost trimis! Vă vom contacta în curând.",
-    "error": "❌ Eroare la trimitere. Încercați din nou.",
-    "addressValue": "str. Independenței 1, Chișinău",
-    "phoneValue": "+373 22 000 000",
-    "emailValue": "info@german.clg.md",
-    "scheduleValue": "Lun – Vin: 9:00 – 18:00",
-    "mapTitle": "Locație"
+    "title": "Contacte / Adresa",
+    "address": "str. Mitropolit Petru Movilă, nr.23/3 Oficiu 3",
+    "mapBtn": "Deschide harta"
   },
   "faq": {
     "title": "Întrebări și răspunsuri",

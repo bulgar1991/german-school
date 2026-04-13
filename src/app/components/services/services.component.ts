@@ -18,13 +18,21 @@ export class ServicesComponent {
   spaceBetween = 24
 
   services: Service[] = [
-    { icon: 'assets/icons/services/chat.svg', titleKey: 'services.items.0.title', link: '/cursuri' },
-    { icon: 'assets/icons/services/osd.svg', titleKey: 'services.items.1.title', link: '/examene-osd' },
-    { icon: 'assets/icons/services/clipboard.svg', titleKey: 'services.items.2.title', link: '/pregatire-examene' },
-    { icon: 'assets/icons/services/translate.svg', titleKey: 'services.items.3.title', link: '/cursuri-limbi-moderne' },
-    { icon: 'assets/icons/services/chat.svg', titleKey: 'services.items.0.title', link: '/cursuri' },
-    { icon: 'assets/icons/services/osd.svg', titleKey: 'services.items.1.title', link: '/examene-osd' },
-    { icon: 'assets/icons/services/clipboard.svg', titleKey: 'services.items.2.title', link: '/pregatire-examene' },
-    { icon: 'assets/icons/services/translate.svg', titleKey: 'services.items.3.title', link: '/cursuri-limbi-moderne' },
+    { icon: 'assets/images/services/chat.svg', titleKey: 'services.items.0.title', link: '/cursuri' },
+    { icon: 'assets/images/services/osd.svg', titleKey: 'services.items.1.title', link: '/examene-osd' },
+    { icon: 'assets/images/services/writing-pad.svg', titleKey: 'services.items.2.title', link: '/pregatire-examene' },
+    {
+      icon: 'assets/images/services/language.svg',
+      titleKey: 'services.items.3.title',
+      link: '/cursuri-limbi-moderne',
+    },
+    { icon: 'assets/images/services/chat.svg', titleKey: 'services.items.0.title', link: '/cursuri' },
+    { icon: 'assets/images/services/osd.svg', titleKey: 'services.items.1.title', link: '/examene-osd' },
+    { icon: 'assets/images/services/writing-pad.svg', titleKey: 'services.items.2.title', link: '/pregatire-examene' },
+    {
+      icon: 'assets/images/services/language.svg',
+      titleKey: 'services.items.3.title',
+      link: '/cursuri-limbi-moderne',
+    },
   ]
 }
