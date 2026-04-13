@@ -9,24 +9,28 @@
     @apply flex items-center gap-6;
   }
 
+  // ── Logo ─────────────────────────────────────────────────────────────────
   &__logo {
     @apply flex items-center no-underline;
+    flex-shrink: 0;
+    width: 140px;
 
     &-image {
-      @apply w-auto h-[70px] object-contain;
+      width: 100%;
+      height: auto;
+      max-height: 70px;
+      object-fit: contain;
+      display: block;
     }
   }
 
-
-
-  // ── Desktop nav ──────────────────────────────────────────────────────────
+  // ── Desktop nav ───────────────────────────────────────────────────────────
   &__nav {
     display: none;
     flex: 1;
+    min-width: 0;
 
-    @media (min-width: 1024px) {
-      display: block;
-    }
+    @media (min-width: 1024px) { display: block; }
   }
 
   &__nav-list {
@@ -49,18 +53,11 @@
     white-space: nowrap;
     transition: color 0.2s, background 0.2s;
 
-    &:hover {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.07);
-    }
-
-    &--active {
-      color: #a855f7;
-      font-weight: 600;
-    }
+    &:hover { color: #fff; background: rgba(255, 255, 255, 0.07); }
+    &--active { color: #a855f7; font-weight: 600; }
   }
 
-  // ── Right actions ────────────────────────────────────────────────────────
+  // ── Right actions ─────────────────────────────────────────────────────────
   &__actions {
     display: none;
     align-items: center;
@@ -68,9 +65,7 @@
     margin-left: auto;
     flex-shrink: 0;
 
-    @media (min-width: 1024px) {
-      display: flex;
-    }
+    @media (min-width: 1024px) { display: flex; }
   }
 
   &__contact-link {
@@ -85,11 +80,16 @@
     transition: color 0.2s;
 
     svg { flex-shrink: 0; }
-
     &:hover { color: #fff; }
+
+    // Text hidden on tablet (1024-1279px), visible from 1280px
+    &-text {
+      display: none;
+      @media (min-width: 1280px) { display: inline; }
+    }
   }
 
-  // ── Hamburger ────────────────────────────────────────────────────────────
+  // ── Hamburger ─────────────────────────────────────────────────────────────
   &__hamburger {
     display: flex;
     flex-direction: column;
@@ -101,9 +101,7 @@
     padding: 6px;
     margin-left: auto;
 
-    @media (min-width: 1024px) {
-      display: none;
-    }
+    @media (min-width: 1024px) { display: none; }
 
     span {
       display: block;
@@ -116,7 +114,6 @@
   }
 }
 
-// ── Sidebar overlay ──────────────────────────────────────────────────────────
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -126,7 +123,6 @@
   animation: fadeIn 0.2s ease;
 }
 
-// ── Sidebar panel ────────────────────────────────────────────────────────────
 .sidebar {
   position: fixed;
   inset-block: 0;
@@ -149,24 +145,8 @@
     flex-shrink: 0;
   }
 
-  &__logo {
-    font-size: 1.0625rem;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-
-    strong { color: #a855f7; }
-  }
-
-  &__logo {
-    text-decoration: none;
-  }
-
-  &__logo-img {
-    height: 32px;
-    width: auto;
-    object-fit: contain;
-  }
+  &__logo { text-decoration: none; }
+  &__logo-img { height: 32px; width: auto; object-fit: contain; }
 
   &__close {
     display: flex;
@@ -180,16 +160,10 @@
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
-
     &:hover { background: rgba(168, 85, 247, 0.25); color: #fff; }
   }
 
-  &__nav {
-    display: flex;
-    flex-direction: column;
-    padding: 0.75rem 0;
-    flex: 1;
-  }
+  &__nav { display: flex; flex-direction: column; padding: 0.75rem 0; flex: 1; }
 
   &__link {
     display: block;
@@ -201,17 +175,8 @@
     border-left: 3px solid transparent;
     transition: color 0.2s, background 0.2s, border-color 0.2s;
 
-    &:hover {
-      color: #fff;
-      background: rgba(168, 85, 247, 0.12);
-      border-left-color: #a855f7;
-    }
-
-    &--active {
-      color: #a855f7;
-      border-left-color: #a855f7;
-      font-weight: 600;
-    }
+    &:hover { color: #fff; background: rgba(168, 85, 247, 0.12); border-left-color: #a855f7; }
+    &--active { color: #a855f7; border-left-color: #a855f7; font-weight: 600; }
   }
 
   &__footer {
@@ -224,13 +189,5 @@
   }
 }
 
-// ── Animations ───────────────────────────────────────────────────────────────
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes slideIn {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(0); }
-}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
