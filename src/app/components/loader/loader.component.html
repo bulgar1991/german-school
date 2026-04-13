@@ -1,0 +1,22 @@
+@if (loader.visible()) {
+  <div class="loader" [class.loader--hiding]="loader.progress() === 100">
+
+    <!-- Logo -->
+    <div class="loader__logo">
+      <img src="assets/images/site-logo.svg" alt="CLG Deutsch" class="loader__logo-img" />
+    </div>
+
+    <!-- Animated dots -->
+    <div class="loader__dots" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="loader__bar-wrap">
+      <div class="loader__bar" [style.width.%]="loader.progress()"></div>
+    </div>
+
+  </div>
+}
