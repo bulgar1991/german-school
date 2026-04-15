@@ -1,21 +1,21 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
+import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild } from '@angular/core'
 import { RouterLink } from '@angular/router'
 import { TranslateModule } from '@ngx-translate/core'
-import { register } from 'swiper/element/bundle'
+import { Swiper } from 'swiper'
+import { Navigation, Pagination } from 'swiper/modules'
 import { Announcement } from '@/interfaces'
-
-register()
 
 @Component({
   selector: 'app-announcements',
+  standalone: true,
   imports: [TranslateModule, RouterLink],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './announcements.component.html',
   styleUrl: './announcements.component.scss',
-  standalone: true,
 })
-export class AnnouncementsComponent {
-  spaceBetween = 24
+export class AnnouncementsComponent implements AfterViewInit, OnDestroy {
+  @ViewChild('swiperEl') swiperEl!: ElementRef<HTMLElement>
+
+  private swiper!: InstanceType<typeof Swiper>
 
   announcements: Announcement[] = [
     {
@@ -83,4 +83,29 @@ export class AnnouncementsComponent {
       time: '',
     },
   ]
+
+  ngAfterViewInit(): void {
+    this.swiper = new Swiper(this.swiperEl.nativeElement, {
+      modules: [Navigation, Pagination],
+      slidesPerView: 1.2,
+      spaceBetween: 24,
+      pagination: {
+        el: '.announcements__pagination',
+        clickable: true,
+      },
+      navigation: {
+        prevEl: '.announcements__arrow--prev',
+        nextEl: '.announcements__arrow--next',
+      },
+      breakpoints: {
+        640: { slidesPerView: 2, spaceBetween: 16 },
+        1024: { slidesPerView: 3, spaceBetween: 24 },
+        1280: { slidesPerView: 4, spaceBetween: 24 },
+      },
+    })
+  }
+
+  ngOnDestroy(): void {
+    this.swiper?.destroy()
+  }
 }

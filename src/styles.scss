@@ -1,5 +1,8 @@
 @use '@angular/material' as material;
 @use 'assets/fonts/icons.css';
+@use 'swiper/css';
+@use 'swiper/css/navigation';
+@use 'swiper/css/pagination';
 @include material.elevation-classes();
 @include material.app-background();
 
@@ -69,5 +72,37 @@
 
   *:focus {
     outline: none;
+  }
+}
+
+.header-menu {
+  &.mat-mdc-menu-panel {
+    background: #1a1a2e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+    min-width: 220px;
+  }
+
+  .mat-mdc-menu-content { padding: 0.5rem; }
+
+  .header-menu__item {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 8px;
+    height: auto;
+    line-height: 1.4;
+    padding: 0.625rem 0.875rem;
+
+    &:hover {
+      color: #fff;
+      background: rgba(168, 85, 247, 0.15);
+    }
+
+    // routerLinkActive on mat-menu-item
+    &.header__nav-link--active {
+      color: #a855f7;
+    }
   }
 }

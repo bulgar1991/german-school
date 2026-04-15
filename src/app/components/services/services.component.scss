@@ -1,8 +1,17 @@
+:host {
+  --swiper-pagination-bottom: 0;
+  --swiper-pagination-color: #7F58F9;
+
+  .swiper {
+    padding-bottom: 32px;
+  }
+}
+
+
 .services {
   background: #2d2d2d;
   padding: 3.5rem 0 4rem;
 
-  // ── Header row ─────────────────────────────────────────────────────────────
   &__header {
     display: flex;
     align-items: center;
@@ -17,11 +26,7 @@
     margin: 0;
   }
 
-  // ── Arrows ─────────────────────────────────────────────────────────────────
-  &__arrows {
-    display: flex;
-    gap: 0.625rem;
-  }
+  &__arrows { display: flex; gap: 0.625rem; }
 
   &__arrow {
     display: flex;
@@ -37,43 +42,44 @@
     transition: background 0.2s, border-color 0.2s, color 0.2s;
     flex-shrink: 0;
 
-    &:hover {
-      background: rgba(147, 112, 219, 0.15);
-      border-color: #9370db;
-      color: #fff;
-    }
+    &:hover { background: rgba(147, 112, 219, 0.15); border-color: #9370db; color: #fff; }
+    &.swiper-button-disabled { opacity: 0.35; cursor: not-allowed; }
   }
 
-  // ── Swiper ─────────────────────────────────────────────────────────────────
-  &__swiper {
-    width: 100%;
-    padding-bottom: 2.5rem !important;
+  &__pagination {
+    text-align: center;
 
-    --swiper-pagination-color: #9370db;
-    --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.3);
-    --swiper-pagination-bullet-inactive-opacity: 1;
+    :global(.swiper-pagination-bullet) {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      opacity: 1;
+      margin: 0 4px;
+      display: inline-block;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+      background: #9370db;
+      transform: scale(1.35);
+    }
   }
 }
 
-// ── Service card ──────────────────────────────────────────────────────────────
 .service-card {
   background: #fff;
   border-radius: 16px;
   padding: 2rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0;
   height: 100%;
   min-height: 260px;
 
   &__icon {
     margin-bottom: 1.5rem;
-
-    img {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-    }
+    img { width: 48px; height: 48px; object-fit: contain; }
   }
 
   &__title {
@@ -95,9 +101,6 @@
     font-weight: 500;
     text-decoration: none;
     transition: gap 0.2s;
-
-    &:hover {
-      gap: 0.625rem;
-    }
+    &:hover { gap: 0.625rem; }
   }
 }

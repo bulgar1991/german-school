@@ -1,47 +1,45 @@
 <section class="courses">
   <div class="container-screen-4xl mx-auto lg:px-8 px-4">
 
-    <!-- Header row: title + arrows -->
     <div class="courses__header">
       <h2 class="courses__title">{{ 'courses.title' | translate }}</h2>
       <div class="courses__arrows">
-        <button class="courses__arrow" id="courses-prev" aria-label="Previous" (click)="prev()">
+        <button class="courses__arrow courses__arrow--prev" aria-label="Previous">
           <i class="icon icon-chevron-left-solid-full"></i>
         </button>
-        <button class="courses__arrow" id="courses-next" aria-label="Next" (click)="next()">
+        <button class="courses__arrow courses__arrow--next" aria-label="Next">
           <i class="icon icon-chevron-right-solid-full"></i>
         </button>
       </div>
     </div>
 
-    <!-- Swiper: init="false" so we control initialization in ngAfterViewInit -->
-    <swiper-container #swiperEl init="false" class="courses__swiper">
-
-      @for (course of courses; track course.level) {
-        <swiper-slide>
-          <div class="course-card">
-            <span class="course-card__level">{{ course.level }}</span>
-            <h3 class="course-card__title">{{ course.titleKey | translate }}</h3>
-
-            <ul class="course-card__features">
-              @for (feat of course.features; track feat) {
-                <li class="course-card__feature">
-                  <svg class="course-card__diamond" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M7 1l2.5 5.5L7 13 4.5 6.5z" fill="#7c3aed"/>
-                    <path d="M1 7l5.5-2.5L13 7 6.5 9.5z" fill="#9333ea"/>
-                  </svg>
-                  {{ feat | translate }}
-                </li>
-              }
-            </ul>
-
-            <button class="course-card__btn" (click)="openEnroll(course)">
-              {{ 'courses.cta' | translate }}
-            </button>
+    <div #swiperEl class="swiper">
+      <div class="swiper-wrapper">
+        @for (course of courses; track course.level) {
+          <div class="swiper-slide">
+            <div class="course-card">
+              <span class="course-card__level">{{ course.level }}</span>
+              <h3 class="course-card__title">{{ course.titleKey | translate }}</h3>
+              <ul class="course-card__features">
+                @for (feat of course.features; track feat) {
+                  <li class="course-card__feature">
+                    <svg class="course-card__diamond" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M7 1l2.5 5.5L7 13 4.5 6.5z" fill="#7c3aed"/>
+                      <path d="M1 7l5.5-2.5L13 7 6.5 9.5z" fill="#9333ea"/>
+                    </svg>
+                    {{ feat | translate }}
+                  </li>
+                }
+              </ul>
+              <button class="course-card__btn" (click)="openEnroll(course)">
+                {{ 'courses.cta' | translate }}
+              </button>
+            </div>
           </div>
-        </swiper-slide>
-      }
+        }
+      </div>
+      <div class="courses__pagination swiper-pagination"></div>
+    </div>
 
-    </swiper-container>
   </div>
 </section>

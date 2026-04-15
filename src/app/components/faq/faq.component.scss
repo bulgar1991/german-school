@@ -20,12 +20,11 @@
   }
 
   &__item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1.5rem 1rem 1.5rem 0;
 
     @media (min-width: 769px) {
       &:nth-child(odd)  { padding-right: 3rem; }
-      &:nth-child(even) { padding-left: 3rem; border-left: 1px solid rgba(255,255,255,.1); }
+      &:nth-child(even) { padding-left: 3rem; }
     }
   }
 
