@@ -1,13 +1,9 @@
 .header {
   @apply sticky top-0 left-0 z-50 py-7 bg-light-black border-b border-solid border-medium-gray;
 
-  &--scrolled {
-    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
-  }
+  &--scrolled { box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4); }
 
-  &__inner {
-    @apply flex items-center gap-6;
-  }
+  &__inner { @apply flex items-center gap-6; }
 
   // ── Logo ─────────────────────────────────────────────────────────────────
   &__logo {
@@ -29,21 +25,24 @@
     display: none;
     flex: 1;
     min-width: 0;
-
     @media (min-width: 1024px) { display: block; }
   }
 
   &__nav-list {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 0;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
+  &__nav-item { position: relative; }
+
   &__nav-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     padding: 0.5rem 0.75rem;
     font-size: 0.9375rem;
     font-weight: 500;
@@ -51,20 +50,29 @@
     text-decoration: none;
     border-radius: 6px;
     white-space: nowrap;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
     transition: color 0.2s, background 0.2s;
 
     &:hover { color: #fff; background: rgba(255, 255, 255, 0.07); }
     &--active { color: #a855f7; font-weight: 600; }
+    &--has-dropdown { user-select: none; }
   }
 
-  // ── Right actions ─────────────────────────────────────────────────────────
+  &__dropdown-caret {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+
+  // ── Actions ───────────────────────────────────────────────────────────────
   &__actions {
     display: none;
     align-items: center;
     gap: 1rem;
     margin-left: auto;
     flex-shrink: 0;
-
     @media (min-width: 1024px) { display: flex; }
   }
 
@@ -78,11 +86,8 @@
     text-decoration: none;
     white-space: nowrap;
     transition: color 0.2s;
-
-    svg { flex-shrink: 0; }
     &:hover { color: #fff; }
 
-    // Text hidden on tablet (1024-1279px), visible from 1280px
     &-text {
       display: none;
       @media (min-width: 1280px) { display: inline; }
@@ -100,7 +105,6 @@
     cursor: pointer;
     padding: 6px;
     margin-left: auto;
-
     @media (min-width: 1024px) { display: none; }
 
     span {
@@ -114,6 +118,7 @@
   }
 }
 
+// ── Sidebar ───────────────────────────────────────────────────────────────────
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -166,17 +171,33 @@
   &__nav { display: flex; flex-direction: column; padding: 0.75rem 0; flex: 1; }
 
   &__link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0.875rem 1.5rem;
     color: rgba(255, 255, 255, 0.75);
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
     border-left: 3px solid transparent;
     transition: color 0.2s, background 0.2s, border-color 0.2s;
 
     &:hover { color: #fff; background: rgba(168, 85, 247, 0.12); border-left-color: #a855f7; }
     &--active { color: #a855f7; border-left-color: #a855f7; font-weight: 600; }
+    &--child  { padding-left: 2.5rem; font-size: 0.9375rem; color: rgba(255, 255, 255, 0.6); }
+    &--sub    { padding-left: 3.5rem; font-size: 0.875rem;  color: rgba(255, 255, 255, 0.5); }
+  }
+
+  &__caret {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    .sidebar__link--open & { transform: rotate(180deg); }
   }
 
   &__footer {
@@ -189,5 +210,5 @@
   }
 }
 
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeIn  { from { opacity: 0; }                 to { opacity: 1; } }
 @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }

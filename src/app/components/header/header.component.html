@@ -2,29 +2,73 @@
   <div class="container-screen-3xl mx-auto lg:px-desktop px-mobile">
     <div class="header__inner">
 
-      <!-- Logo: fixed width, never shrinks -->
+      <!-- Logo -->
       <a class="header__logo" routerLink="/" aria-label="CLG Chișinău">
         <img src="assets/images/site-logo.svg" alt="CLG Chișinău" class="header__logo-image" />
       </a>
 
       <!-- Desktop nav -->
       <nav class="header__nav" aria-label="Navigare principală">
-        <ul class="header__nav-list flex justify-center items-center">
+        <ul class="header__nav-list">
           @for (link of navLinks; track link.anchor) {
-            <li>
-              <a
-                class="header__nav-link"
-                [routerLink]="link.anchor"
-                routerLinkActive="header__nav-link--active"
-                [routerLinkActiveOptions]="{ exact: true }">
-                {{ link.key | translate }}
-              </a>
+            <li class="header__nav-item">
+
+              @if (link.children?.length) {
+
+                <!-- Trigger button for mat-menu -->
+                <button
+                  class="header__nav-link header__nav-link--has-dropdown"
+                  [matMenuTriggerFor]="levelOneMenu">
+                  {{ link.key | translate }}
+                  <svg class="header__dropdown-caret" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+
+                <!-- Level 1 mat-menu -->
+                <mat-menu #levelOneMenu="matMenu" class="header-menu">
+                  @for (child of link.children; track child.anchor) {
+                    @if (child.children?.length) {
+                      <!-- Has nested submenu -->
+                      <button mat-menu-item [matMenuTriggerFor]="levelTwoMenu" class="header-menu__item">
+                        {{ child.key | translate }}
+                      </button>
+
+                      <!-- Level 2 mat-menu -->
+                      <mat-menu #levelTwoMenu="matMenu" class="header-menu">
+                        @for (sub of child.children; track sub.anchor) {
+                          <a mat-menu-item class="header-menu__item"
+                             [routerLink]="sub.anchor">
+                            {{ sub.key | translate }}
+                          </a>
+                        }
+                      </mat-menu>
+
+                    } @else {
+                      <a mat-menu-item class="header-menu__item"
+                         [routerLink]="child.anchor">
+                        {{ child.key | translate }}
+                      </a>
+                    }
+                  }
+                </mat-menu>
+
+              } @else {
+                <a
+                  class="header__nav-link"
+                  [routerLink]="link.anchor"
+                  routerLinkActive="header__nav-link--active"
+                  [routerLinkActiveOptions]="{ exact: true }">
+                  {{ link.key | translate }}
+                </a>
+              }
+
             </li>
           }
         </ul>
       </nav>
 
-      <!-- Actions: icon always visible, text only from 1280px -->
+      <!-- Actions -->
       <div class="header__actions">
         <a class="header__contact-link" routerLink="/contact">
           <i class="icon icon-phone-solid-full"></i>
@@ -33,21 +77,20 @@
         <app-language-switcher />
       </div>
 
-      <!-- Hamburger (mobile/tablet) -->
+      <!-- Hamburger -->
       <button
         class="header__hamburger"
         (click)="openSidebar()"
         aria-label="Deschide meniu"
         [attr.aria-expanded]="sidebarOpen()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
 
     </div>
   </div>
 </header>
 
+<!-- Mobile sidebar -->
 @if (sidebarOpen()) {
   <div class="sidebar-overlay" (click)="closeSidebar()" aria-hidden="true"></div>
 
@@ -66,14 +109,49 @@
 
     <nav class="sidebar__nav" aria-label="Meniu mobil">
       @for (link of navLinks; track link.anchor) {
-        <a
-          class="sidebar__link"
-          [routerLink]="link.anchor"
-          routerLinkActive="sidebar__link--active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          (click)="closeSidebar()">
-          {{ link.key | translate }}
-        </a>
+
+        @if (link.children?.length) {
+          <button
+            class="sidebar__link sidebar__link--parent"
+            [class.sidebar__link--open]="openMobile() === link.key"
+            (click)="toggleMobile(link.key)">
+            {{ link.key | translate }}
+            <svg class="sidebar__caret" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          @if (openMobile() === link.key) {
+            @for (child of link.children; track child.anchor) {
+              <a class="sidebar__link sidebar__link--child"
+                 [routerLink]="child.anchor"
+                 routerLinkActive="sidebar__link--active"
+                 (click)="closeSidebar()">
+                {{ child.key | translate }}
+              </a>
+              @if (child.children?.length) {
+                @for (sub of child.children; track sub.anchor) {
+                  <a class="sidebar__link sidebar__link--sub"
+                     [routerLink]="sub.anchor"
+                     routerLinkActive="sidebar__link--active"
+                     (click)="closeSidebar()">
+                    {{ sub.key | translate }}
+                  </a>
+                }
+              }
+            }
+          }
+
+        } @else {
+          <a class="sidebar__link"
+             [routerLink]="link.anchor"
+             routerLinkActive="sidebar__link--active"
+             [routerLinkActiveOptions]="{ exact: true }"
+             (click)="closeSidebar()">
+            {{ link.key | translate }}
+          </a>
+        }
+
       }
     </nav>
 
@@ -83,5 +161,6 @@
         {{ 'nav.contact' | translate }}
       </a>
     </div>
+
   </aside>
 }

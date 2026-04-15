@@ -1,4 +1,5 @@
 export interface NavLink {
-    key: string;
-    anchor: string;
+  key: string
+  anchor: string
+  children?: NavLink[]
 }

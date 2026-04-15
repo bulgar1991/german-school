@@ -8,7 +8,6 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/layouts/main-layout/main-layout.component').then(m => m.MainLayoutComponent),
     children: [
-      // ── Home ───────────────────────────────────────────────────────────────
       {
         path: '',
         loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
@@ -25,23 +24,20 @@ export const routes: Routes = [
               { property: 'og:title', content: 'seo.home.title' },
               { property: 'og:description', content: 'seo.home.description' },
               { property: 'og:image', content: 'https://german.clg.md/assets/images/og-image.jpg' },
-              { name: 'twitter:image', content: 'https://german.clg.md/assets/images/og-image.jpg' },
             ],
           },
         },
       },
 
-      // ── Coming soon page ───────────────────────────────────────────────────
       {
         path: 'coming-soon',
         loadComponent: () => import('./components/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
         data: { name: 'coming-soon' },
       },
 
-      // ── Future pages — flip comingSoon: false when page is ready ───────────
       {
         path: 'cursuri',
-        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent), // replace with CoursesComponent
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
         canActivate: [comingSoonGuard],
         resolve: { seo: seoResolver },
         data: {
@@ -53,15 +49,15 @@ export const routes: Routes = [
             metaTags: [
               { name: 'description', content: 'seo.courses.description' },
               { property: 'og:title', content: 'seo.courses.title' },
-              { property: 'og:description', content: 'seo.courses.description' },
               { property: 'og:image', content: 'https://german.clg.md/assets/images/og-image.jpg' },
             ],
           },
         },
       },
+
       {
         path: 'examene-osd',
-        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent), // replace with OsdComponent
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
         canActivate: [comingSoonGuard],
         resolve: { seo: seoResolver },
         data: {
@@ -73,12 +69,13 @@ export const routes: Routes = [
             metaTags: [
               { name: 'description', content: 'seo.osd.description' },
               { property: 'og:title', content: 'seo.osd.title' },
-              { property: 'og:description', content: 'seo.osd.description' },
               { property: 'og:image', content: 'https://german.clg.md/assets/images/og-image.jpg' },
             ],
           },
         },
       },
+
+      // ── Cursuri pentru medici + sub-pages (all comingSoon: true for now) ──
       {
         path: 'cursuri-medici',
         loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
@@ -93,12 +90,42 @@ export const routes: Routes = [
             metaTags: [
               { name: 'description', content: 'seo.medical.description' },
               { property: 'og:title', content: 'seo.medical.title' },
-              { property: 'og:description', content: 'seo.medical.description' },
               { property: 'og:image', content: 'https://german.clg.md/assets/images/og-image.jpg' },
             ],
           },
         },
       },
+      {
+        path: 'cursuri-medici/oferta-generala',
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
+        canActivate: [comingSoonGuard],
+        data: { name: 'medical-general', comingSoon: true },
+      },
+      {
+        path: 'cursuri-medici/mod-desfasurare',
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
+        canActivate: [comingSoonGuard],
+        data: { name: 'medical-format', comingSoon: true },
+      },
+      {
+        path: 'cursuri-medici/suport-curs',
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
+        canActivate: [comingSoonGuard],
+        data: { name: 'medical-support', comingSoon: true },
+      },
+      {
+        path: 'cursuri-medici/mod-predare',
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
+        canActivate: [comingSoonGuard],
+        data: { name: 'medical-teaching', comingSoon: true },
+      },
+      {
+        path: 'cursuri-medici/pregatire-examene',
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
+        canActivate: [comingSoonGuard],
+        data: { name: 'medical-exam', comingSoon: true },
+      },
+
       {
         path: 'studii-strainatate',
         loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
@@ -113,12 +140,12 @@ export const routes: Routes = [
             metaTags: [
               { name: 'description', content: 'seo.abroad.description' },
               { property: 'og:title', content: 'seo.abroad.title' },
-              { property: 'og:description', content: 'seo.abroad.description' },
               { property: 'og:image', content: 'https://german.clg.md/assets/images/og-image.jpg' },
             ],
           },
         },
       },
+
       {
         path: 'despre-noi',
         loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
@@ -133,7 +160,6 @@ export const routes: Routes = [
             metaTags: [
               { name: 'description', content: 'seo.about.description' },
               { property: 'og:title', content: 'seo.about.title' },
-              { property: 'og:description', content: 'seo.about.description' },
               { property: 'og:image', content: 'https://german.clg.md/assets/images/og-image.jpg' },
             ],
           },

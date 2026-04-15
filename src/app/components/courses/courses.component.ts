@@ -1,28 +1,25 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, AfterViewInit, ElementRef, ViewChild } from '@angular/core'
+import { Component, AfterViewInit, OnDestroy, ElementRef, ViewChild, inject } from '@angular/core'
 import { TranslateModule, TranslateService } from '@ngx-translate/core'
 import { MatDialog } from '@angular/material/dialog'
-import { register } from 'swiper/element/bundle'
+import { Swiper } from 'swiper'
+import { Navigation, Pagination } from 'swiper/modules'
 import { Course } from '@/interfaces'
 import { EnrollDialogComponent } from '@/components/enroll-dialog/enroll-dialog.component'
-import {EnrollDialogData} from '@/interfaces'
-
-register()
+import { EnrollDialogData } from '@/interfaces'
 
 @Component({
   selector: 'app-courses',
   standalone: true,
   imports: [TranslateModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.scss',
 })
-export class CoursesComponent implements AfterViewInit {
-  @ViewChild('swiperEl') swiperEl!: ElementRef
+export class CoursesComponent implements AfterViewInit, OnDestroy {
+  @ViewChild('swiperEl') swiperEl!: ElementRef<HTMLElement>
 
+  private swiper!: InstanceType<typeof Swiper>
   private dialog = inject(MatDialog)
   private translate = inject(TranslateService)
-
-  spaceBetween = 24
 
   courses: Course[] = [
     {
@@ -76,14 +73,17 @@ export class CoursesComponent implements AfterViewInit {
   ]
 
   ngAfterViewInit(): void {
-    const swiper = this.swiperEl.nativeElement
-    Object.assign(swiper, {
-      spaceBetween: this.spaceBetween,
+    this.swiper = new Swiper(this.swiperEl.nativeElement, {
+      modules: [Navigation, Pagination],
       slidesPerView: 1.2,
-      pagination: { clickable: true },
+      spaceBetween: 24,
+      pagination: {
+        el: '.courses__pagination',
+        clickable: true,
+      },
       navigation: {
-        prevEl: this.swiperEl.nativeElement.previousElementSibling?.querySelector('#courses-prev') ?? '#courses-prev',
-        nextEl: this.swiperEl.nativeElement.previousElementSibling?.querySelector('#courses-next') ?? '#courses-next',
+        prevEl: '.courses__arrow--prev',
+        nextEl: '.courses__arrow--next',
       },
       breakpoints: {
         640: { slidesPerView: 2, spaceBetween: 16 },
@@ -91,14 +91,10 @@ export class CoursesComponent implements AfterViewInit {
         1280: { slidesPerView: 4, spaceBetween: 24 },
       },
     })
-    swiper.initialize()
   }
 
-  prev(): void {
-    this.swiperEl.nativeElement.swiper.slidePrev()
-  }
-  next(): void {
-    this.swiperEl.nativeElement.swiper.slideNext()
+  ngOnDestroy(): void {
+    this.swiper?.destroy()
   }
 
   openEnroll(course: Course): void {
