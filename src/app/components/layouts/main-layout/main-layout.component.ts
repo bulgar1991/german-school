@@ -24,9 +24,6 @@ export class MainLayoutComponent implements OnInit {
   private loader = inject(LoaderService)
 
   ngOnInit(): void {
-    // Show on initial load
-    this.loader.show()
-
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         this.loader.show()
