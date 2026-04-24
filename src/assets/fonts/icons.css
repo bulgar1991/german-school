@@ -1,7 +1,7 @@
 @font-face {
     font-family: "icons";
-    src: url("/assets/fonts/icons.woff?9e5eb52f34da53c795916cd42232ee81") format("woff"),
-url("/assets/fonts/icons.woff2?9e5eb52f34da53c795916cd42232ee81") format("woff2");
+    src: url("/assets/fonts/icons.woff?944b9d0977032708663a7ec7c1e8ed20") format("woff"),
+url("/assets/fonts/icons.woff2?944b9d0977032708663a7ec7c1e8ed20") format("woff2");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -33,15 +33,21 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-envelope-solid-full:before {
     content: "\f106";
 }
-.icon-chevron-up-solid-full:before {
+.icon-circle-plus-solid-full:before {
     content: "\f107";
 }
-.icon-chevron-right-solid-full:before {
+.icon-circle-minus-solid-full:before {
     content: "\f108";
 }
-.icon-chevron-left-solid-full:before {
+.icon-chevron-up-solid-full:before {
     content: "\f109";
 }
-.icon-chevron-down-solid-full:before {
+.icon-chevron-right-solid-full:before {
     content: "\f10a";
+}
+.icon-chevron-left-solid-full:before {
+    content: "\f10b";
+}
+.icon-chevron-down-solid-full:before {
+    content: "\f10c";
 }

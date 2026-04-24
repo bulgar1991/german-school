@@ -1,0 +1,91 @@
+<div class="abroad-page">
+  <section class="abroad-hero">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <span class="abroad-hero__eyebrow">{{ 'abroadPage.hero.eyebrow' | translate }}</span>
+      <h1 class="abroad-hero__title"
+        >{{ 'abroadPage.hero.title' | translate }} <span>{{ 'abroadPage.hero.titleHighlight' | translate }}</span></h1
+      >
+      <p class="abroad-hero__sub">{{ 'abroadPage.hero.sub' | translate }}</p>
+    </div>
+  </section>
+
+  <section class="abroad-stats-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="abroad-stats">
+        @for (s of stats(); track s.label) {
+          <div class="abroad-stat">
+            <span class="abroad-stat__val">{{ s.val }}</span>
+            <span class="abroad-stat__label">{{ s.label }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="abroad-dest-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <h2 class="abroad-section-title"
+        >{{ 'abroadPage.destTitle' | translate }} <span>{{ 'abroadPage.destTitleHighlight' | translate }}</span></h2
+      >
+      <div class="dest-list">
+        @for (d of destinations(); track d.country) {
+          <div class="dest-card">
+            <div class="dest-card__flag">{{ d.flag }}</div>
+            <div class="dest-card__main">
+              <div class="dest-card__head">
+                <h3 class="dest-card__country">{{ d.country }}</h3>
+                <span class="dest-card__cities">{{ d.cities }}</span>
+              </div>
+              <p class="dest-card__desc">{{ d.desc }}</p>
+              <div class="dest-card__footer">
+                <span class="dest-card__req"><i class="icon icon-file-alt-solid-full"></i> {{ d.req }}</span>
+                <div class="dest-card__links">
+                  @for (l of d.links; track l) {
+                    <span class="dest-card__link">{{ l }}</span>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="abroad-timeline-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <h2 class="abroad-section-title"
+        >{{ 'abroadPage.timelineTitle' | translate }}
+        <span>{{ 'abroadPage.timelineTitleHighlight' | translate }}</span></h2
+      >
+      <div class="abroad-timeline">
+        @for (t of timeline(); track t.step; let last = $last) {
+          <div class="abroad-tl-item" [class.abroad-tl-item--last]="last">
+            <div class="abroad-tl-item__left">
+              <div class="abroad-tl-item__num">{{ t.step }}</div>
+              @if (!last) {
+                <div class="abroad-tl-item__line"></div>
+              }
+            </div>
+            <div class="abroad-tl-item__body">
+              <h4 class="abroad-tl-item__title">{{ t.title }}</h4>
+              <p class="abroad-tl-item__desc">{{ t.desc }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="abroad-cta-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="abroad-cta">
+        <div>
+          <h3 class="abroad-cta__title">{{ 'abroadPage.cta.title' | translate }}</h3>
+          <p class="abroad-cta__sub">{{ 'abroadPage.cta.sub' | translate }}</p>
+        </div>
+        <a class="abroad-cta__btn" routerLink="/contact">{{ 'abroadPage.cta.btn' | translate }}</a>
+      </div>
+    </div>
+  </section>
+</div>

@@ -70,6 +70,18 @@ export class CoursesComponent implements AfterViewInit, OnDestroy {
       features: ['courses.items.b22.level', 'courses.items.b22.duration', 'courses.items.b22.format'],
       link: '/cursuri/b2-2',
     },
+    {
+      level: 'C1',
+      titleKey: 'courses.subtitle',
+      features: ['courses.items.c1.level', 'courses.items.c1.duration', 'courses.items.c1.format'],
+      link: '/cursuri/c1',
+    },
+    {
+      level: 'C2',
+      titleKey: 'courses.subtitle',
+      features: ['courses.items.c2.level', 'courses.items.c2.duration', 'courses.items.c2.format'],
+      link: '/cursuri/c2',
+    },
   ]
 
   ngAfterViewInit(): void {

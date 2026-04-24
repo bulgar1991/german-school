@@ -1,0 +1,134 @@
+<div class="osd-page">
+  <!-- Hero -->
+  <section class="osd-hero">
+    <div class="container mx-auto lg:px-8 px-4">
+      <span class="osd-hero__eyebrow">{{ 'osdPage.hero.eyebrow' | translate }}</span>
+      <h1 class="osd-hero__title">
+        {{ 'osdPage.hero.title' | translate }}
+        <span class="osd-hero__title-accent">ÖSD</span>
+      </h1>
+      <p class="osd-hero__sub">{{ 'osdPage.hero.sub' | translate }}</p>
+      <div class="osd-hero__badges">
+        <span class="osd-hero__badge">
+          <i class="icon icon-check-circle-solid-full"></i>
+          {{ 'osdPage.hero.badge1' | translate }}
+        </span>
+        <span class="osd-hero__badge">
+          <i class="icon icon-infinity-solid-full"></i>
+          {{ 'osdPage.hero.badge2' | translate }}
+        </span>
+        <span class="osd-hero__badge">
+          <i class="icon icon-award-solid-full"></i>
+          {{ 'osdPage.hero.badge3' | translate }}
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exams -->
+  <section class="osd-exams">
+    <div class="container mx-auto lg:px-8 px-4">
+      <div class="osd-section-head">
+        <h2 class="osd-section-head__title">
+          {{ 'osdPage.examsTitle' | translate }}
+          <span>{{ 'osdPage.examsTitleHighlight' | translate }}</span>
+        </h2>
+      </div>
+      <div class="osd-exams__grid">
+        @for (e of exams(); track e.level) {
+          <div class="exam-card">
+            <div class="exam-card__level">{{ e.level }}</div>
+            <h3 class="exam-card__name">{{ e.name }}</h3>
+            <p class="exam-card__use">{{ e.use }}</p>
+            <div class="exam-card__meta">
+              <div class="exam-card__meta-item">
+                <span class="exam-card__meta-label">{{ 'osdPage.duration' | translate }}</span>
+                <span class="exam-card__meta-val">{{ e.duration }}</span>
+              </div>
+              <div class="exam-card__meta-item">
+                <span class="exam-card__meta-label">{{ 'osdPage.fee' | translate }}</span>
+                <span class="exam-card__meta-val">{{ e.price }}</span>
+              </div>
+            </div>
+            <div class="exam-card__skills">
+              @for (s of e.skills; track s) {
+                <span class="exam-card__skill">{{ s }}</span>
+              }
+            </div>
+            <a class="exam-card__btn" routerLink="/contact">
+              {{ 'osdPage.enrollBtn' | translate }}
+            </a>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section class="osd-steps">
+    <div class="container mx-auto lg:px-8 px-4">
+      <div class="osd-section-head">
+        <h2 class="osd-section-head__title">
+          {{ 'osdPage.stepsTitle' | translate }}
+          <span>{{ 'osdPage.stepsTitleHighlight' | translate }}</span>
+        </h2>
+      </div>
+      <div class="osd-steps__list">
+        @for (s of steps(); track s.num; let last = $last) {
+          <div class="osd-step" [class.osd-step--last]="last">
+            <div class="osd-step__left">
+              <div class="osd-step__num">{{ s.num }}</div>
+              @if (!last) {
+                <div class="osd-step__line"></div>
+              }
+            </div>
+            <div class="osd-step__body">
+              <h4 class="osd-step__title">{{ s.title }}</h4>
+              <p class="osd-step__desc">{{ s.desc }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="osd-faq-section">
+    <div class="container mx-auto lg:px-8 px-4">
+      <div class="osd-section-head">
+        <h2 class="osd-section-head__title">
+          {{ 'osdPage.faqTitle' | translate }}
+          <span>{{ 'osdPage.faqTitleHighlight' | translate }}</span>
+        </h2>
+      </div>
+      <div class="osd-faq">
+        @for (f of faq(); track f.q; let i = $index) {
+          <div class="osd-faq__item" [class.osd-faq__item--open]="openFaq() === i">
+            <button class="osd-faq__q" (click)="toggle(i)">
+              <span>{{ f.q }}</span>
+              <i class="icon icon-chevron-down-solid-full osd-faq__caret"></i>
+            </button>
+            @if (openFaq() === i) {
+              <p class="osd-faq__a">{{ f.a }}</p>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="osd-cta-section">
+    <div class="container mx-auto lg:px-8 px-4">
+      <div class="osd-cta">
+        <div class="osd-cta__text">
+          <h3 class="osd-cta__title">{{ 'osdPage.cta.title' | translate }}</h3>
+          <p class="osd-cta__sub">{{ 'osdPage.cta.sub' | translate }}</p>
+        </div>
+        <a class="osd-cta__btn" routerLink="/contact">
+          {{ 'osdPage.cta.btn' | translate }}
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

@@ -165,7 +165,7 @@
   },
   "contact": {
     "title": "Contacte / Adresa",
-    "address": "str. Pușchin 5, Chișinău",
+    "address": "str. Mitropolit Petru Movilă, nr.23/3 Oficiu 3",
     "mapBtn": "Deschide harta"
   },
   "faq": {
@@ -209,7 +209,8 @@
   },
   "comingSoon": {
     "title": "În curând",
-    "subtitle": "Această pagină este în curs de dezvoltare."
+    "subtitle": "Această pagină este în curs de dezvoltare.",
+    "backHome": "Înapoi acasă"
   },
   "seo": {
     "home": {
@@ -316,5 +317,978 @@
     "successTitle": "Cerere trimisă!",
     "successDesc": "Vă vom contacta în cel mai scurt timp posibil.",
     "errorMsg": "A apărut o eroare. Vă rugăm să încercați din nou."
+  },
+  "coursesPage": {
+    "hero": {
+      "eyebrow": "CLG Deutsch — Chișinău",
+      "title": "Cursuri de limbă",
+      "titleHighlight": "germană",
+      "sub": "De la primii pași până la fluență profesională — cursuri structurate pentru toate vârstele, nivelurile și obiectivele. Grupe mici, profesori certificați, rezultate garantate.",
+      "badge1": "✅ Grupe 6-10 persoane",
+      "badge2": "✅ Certificare ÖSD",
+      "badge3": "✅ Orar flexibil"
+    },
+    "tabs": {
+      "german": "Cursuri de Germană",
+      "medical": "Cursuri pentru Medici",
+      "kids": "Cursuri pentru Copii",
+      "business": "Germana de Afaceri",
+      "intensive": "Cursuri Intensive"
+    },
+    "content": {
+      "sub": "Selectează nivelul potrivit și înscrie-te acum.",
+      "enrollBtn": "Lăsați o cerere",
+      "duration": "Durată",
+      "hours": "Ore",
+      "format": "Format"
+    },
+    "whyUs": {
+      "title": "De ce să alegi",
+      "titleHighlight": "CLG Deutsch?",
+      "card1Title": "Grupe mici",
+      "card1Desc": "Maximum 10 studenți per grupă — atenție individuală și progres rapid garantat.",
+      "card2Title": "Profesori certificați",
+      "card2Desc": "Toți profesorii noștri dețin certificare internațională și minimum 5 ani experiență.",
+      "card3Title": "Centru autorizat ÖSD",
+      "card3Desc": "Susții examenele internaționale direct la noi, fără deplasare în altă țară.",
+      "card4Title": "Orar flexibil",
+      "card4Desc": "Dimineață, după-amiază, seară și weekend — ne adaptăm la programul tău."
+    },
+    "cta": {
+      "title": "Nu știi ce nivel să alegi?",
+      "sub": "Facem un test de plasament gratuit și te orientăm spre cursul potrivit.",
+      "btn": "Test gratuit"
+    },
+    "levels": {
+      "german": [
+        {
+          "code": "A1.1",
+          "label": "Începător",
+          "duration": "2 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Primul pas în lumea limbii germane. Înveți să te prezinți, să numeri, să dai și să ceri informații simple.",
+          "topics": [
+            "Alfabetul și pronunția",
+            "Prezentare personală",
+            "Numere și culori",
+            "Familie și prieteni",
+            "Rutina zilnică"
+          ]
+        },
+        {
+          "code": "A1.2",
+          "label": "Începător+",
+          "duration": "2 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Consolidezi bazele și poți purta conversații simple despre viața de zi cu zi.",
+          "topics": [
+            "Cumpărături și prețuri",
+            "Transport și orașe",
+            "Mâncare și restaurante",
+            "Timp liber și hobby-uri",
+            "Locuința"
+          ]
+        },
+        {
+          "code": "A2.1",
+          "label": "Pre-Intermediar",
+          "duration": "3 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Comunici în situații familiare, înțelegi texte simple și poți descrie experiențe trecute.",
+          "topics": ["Trecut și amintiri", "Sănătate și corp", "Planuri de viitor", "Călătorii", "Muncă și profesie"]
+        },
+        {
+          "code": "A2.2",
+          "label": "Pre-Intermediar+",
+          "duration": "3 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Îți extinzi vocabularul și gramatica pentru situații mai complexe din viața cotidiană.",
+          "topics": [
+            "Mediu și natură",
+            "Cultură și evenimente",
+            "Media și internet",
+            "Relații și societate",
+            "Pregătire examen A2"
+          ]
+        },
+        {
+          "code": "B1.1",
+          "label": "Intermediar",
+          "duration": "4 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Ești independent lingvistic — înțelegi și produci texte pe teme familiare fără efort major.",
+          "topics": [
+            "Opinie și argumentare",
+            "Știri și actualitate",
+            "Psihologie și relații",
+            "Gastronomie",
+            "Artă și muzică"
+          ]
+        },
+        {
+          "code": "B1.2",
+          "label": "Intermediar+",
+          "duration": "4 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Interacționezi fluent cu vorbitorii nativi și poți redacta texte clare pe teme diverse.",
+          "topics": [
+            "Economie și finanțe",
+            "Politică și societate",
+            "Știință și tehnologie",
+            "Pregătire examen B1",
+            "Proiecte complexe"
+          ]
+        },
+        {
+          "code": "B2.1",
+          "label": "Superior",
+          "duration": "5 luni",
+          "hours": "4 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Înțelegi texte complexe și abstracte, te exprimi spontan și fluent în orice context.",
+          "topics": [
+            "Limbaj academic",
+            "Negociere și diplomație",
+            "Literatură germană",
+            "Film și teatru",
+            "Dezbateri complexe"
+          ]
+        },
+        {
+          "code": "B2.2",
+          "label": "Superior+",
+          "duration": "5 luni",
+          "hours": "4 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Finalizezi nivelul superior cu o competență lingvistică solidă pentru studii și carieră în Germania.",
+          "topics": [
+            "Tehnici de prezentare",
+            "Redactare avansată",
+            "Limbaj specializat",
+            "Pregătire examen B2",
+            "Cultură și identitate"
+          ]
+        }
+      ],
+      "medical": [
+        {
+          "code": "B1 Med",
+          "label": "Bază Medicală",
+          "duration": "3 luni",
+          "hours": "4 ore/săpt.",
+          "format": "Grup restrâns (max 6)",
+          "desc": "Fundamente de limbaj medical german — anatomie, simptome, interacțiunea cu pacienții.",
+          "topics": [
+            "Anatomie și terminologie",
+            "Anamneza pacientului",
+            "Simptome și diagnostice",
+            "Documentație medicală",
+            "Urgențe de bază"
+          ]
+        },
+        {
+          "code": "B2 Med",
+          "label": "Avansat Medical",
+          "duration": "4 luni",
+          "hours": "4 ore/săpt.",
+          "format": "Grup restrâns (max 6)",
+          "desc": "Comunicare profesională avansată în mediul clinic și pregătire pentru Fachsprachenprüfung.",
+          "topics": [
+            "Epicrize și scrisori medicale",
+            "Prezentări de caz",
+            "Etica medicală",
+            "Fachsprachenprüfung prep",
+            "Lucrul în echipă"
+          ]
+        },
+        {
+          "code": "C1 Med",
+          "label": "Expert Medical",
+          "duration": "4 luni",
+          "hours": "5 ore/săpt.",
+          "format": "Individual / Semiprivat",
+          "desc": "Nivel de expertiză — discuții medicale complexe, cercetare și publicații în limbă germană.",
+          "topics": [
+            "Publicații medicale",
+            "Conferințe și simpozioane",
+            "Limbaj juridic medical",
+            "Recunoaștere diplomă",
+            "Integrare profesională"
+          ]
+        }
+      ],
+      "kids": [
+        {
+          "code": "Starter",
+          "label": "5-8 ani",
+          "duration": "3 luni",
+          "hours": "2 ore/săpt.",
+          "format": "Grupe mici (max 8)",
+          "desc": "Germana prin joc, cântece și povești. Copiii învață natural și cu bucurie.",
+          "topics": [
+            "Cântece și rime",
+            "Culori și animale",
+            "Povești simple",
+            "Jocuri lingvistice",
+            "Salutări și emoții"
+          ]
+        },
+        {
+          "code": "Junior A",
+          "label": "9-12 ani",
+          "duration": "4 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grupe mici (max 8)",
+          "desc": "Bazele gramaticale prezentate creativ, cu activități interactive și proiecte de grup.",
+          "topics": [
+            "Gramatică de bază",
+            "Școală și prieteni",
+            "Sport și hobby",
+            "Călătorii imaginare",
+            "Mini-proiecte"
+          ]
+        },
+        {
+          "code": "Teen B1",
+          "label": "13-17 ani",
+          "duration": "5 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Program adaptat adolescenților cu focus pe comunicare modernă și pregătire pentru examene.",
+          "topics": [
+            "Social media în germană",
+            "Muzică și cultură",
+            "Pregătire Goethe-Zertifikat",
+            "Proiecte creative",
+            "Dezbatere"
+          ]
+        }
+      ],
+      "business": [
+        {
+          "code": "Biz A2",
+          "label": "Business Starter",
+          "duration": "3 luni",
+          "hours": "3 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Comunicare de afaceri de bază — emailuri, telefoane, întâlniri în contexte simple.",
+          "topics": [
+            "Emailuri profesionale",
+            "Telefon de afaceri",
+            "Prezentări simple",
+            "Negociere de bază",
+            "Eticheta în afaceri"
+          ]
+        },
+        {
+          "code": "Biz B2",
+          "label": "Business Advanced",
+          "duration": "4 luni",
+          "hours": "4 ore/săpt.",
+          "format": "Grup / Individual",
+          "desc": "Comunicare de afaceri avansată — contracte, negocieri complexe, prezentări corporative.",
+          "topics": [
+            "Contracte și documente",
+            "Negociere avansată",
+            "Rapoarte și analize",
+            "Networking",
+            "Cultură corporativă"
+          ]
+        }
+      ],
+      "intensive": [
+        {
+          "code": "Intensiv A",
+          "label": "Intensiv A1-A2",
+          "duration": "6 săptămâni",
+          "hours": "4 ore/zi",
+          "format": "Grup mic (max 6)",
+          "desc": "Program accelerat de 6 săptămâni care acoperă nivelurile A1-A2 în format intensiv zilnic.",
+          "topics": [
+            "Gramatică condensată",
+            "Vocabular esențial",
+            "Conversație zilnică",
+            "Exerciții intensive",
+            "Simulări de examen"
+          ]
+        },
+        {
+          "code": "Intensiv B",
+          "label": "Intensiv B1-B2",
+          "duration": "8 săptămâni",
+          "hours": "4 ore/zi",
+          "format": "Grup mic (max 6)",
+          "desc": "Atingi nivelul B1-B2 în 8 săptămâni — ideal pentru cei cu cunoștințe de bază care au un termen limită.",
+          "topics": [
+            "Gramatică avansată",
+            "Scriere și redactare",
+            "Comprehensiune auditivă",
+            "Conversație avansată",
+            "Pregătire examen"
+          ]
+        }
+      ]
+    }
+  },
+  "osdPage": {
+    "hero": {
+      "eyebrow": "🇦🇹 Centru Autorizat Oficial",
+      "title": "Examene internaționale",
+      "sub": "Österreichisches Sprachdiplom Deutsch — diploma de limbă germană recunoscută oficial în Germania, Austria, Elveția și în întreaga lume.",
+      "badge1": "✅ Recunoscut mondial",
+      "badge2": "✅ Valid pe viață",
+      "badge3": "✅ Centru oficial"
+    },
+    "examsTitle": "Examene",
+    "examsTitleHighlight": "disponibile",
+    "duration": "Durată",
+    "fee": "Taxă aprox.",
+    "enrollBtn": "Înscrie-te",
+    "stepsTitle": "Cum funcționează",
+    "stepsTitleHighlight": "procesul?",
+    "faqTitle": "Întrebări",
+    "faqTitleHighlight": "frecvente",
+    "cta": {
+      "title": "Pregătit să obții diploma ÖSD?",
+      "sub": "Contactează-ne pentru datele disponibile.",
+      "btn": "Contactează-ne acum"
+    },
+    "exams": [
+      {
+        "level": "A1",
+        "name": "ÖSD Zertifikat A1",
+        "use": "Viză de familie, reîntregirea familiei",
+        "price": "~80€",
+        "duration": "60 min",
+        "skills": ["Lectură", "Scriere", "Ascultare", "Vorbire"]
+      },
+      {
+        "level": "A2",
+        "name": "ÖSD Zertifikat A2",
+        "use": "Viză de muncă, integrare",
+        "price": "~100€",
+        "duration": "90 min",
+        "skills": ["Lectură", "Scriere", "Ascultare", "Vorbire"]
+      },
+      {
+        "level": "B1",
+        "name": "ÖSD Zertifikat B1",
+        "use": "Cetățenie, studii vocaționale",
+        "price": "~130€",
+        "duration": "165 min",
+        "skills": ["Lectură", "Scriere", "Ascultare", "Vorbire"]
+      },
+      {
+        "level": "B2",
+        "name": "ÖSD Zertifikat B2",
+        "use": "Universitate, carieră profesională",
+        "price": "~160€",
+        "duration": "210 min",
+        "skills": ["Lectură", "Scriere", "Ascultare", "Vorbire"]
+      },
+      {
+        "level": "C1",
+        "name": "ÖSD Zertifikat C1",
+        "use": "Studii avansate, profesii înalt calificate",
+        "price": "~190€",
+        "duration": "240 min",
+        "skills": ["Lectură", "Scriere", "Ascultare", "Vorbire"]
+      }
+    ],
+    "steps": [
+      {
+        "num": "01",
+        "title": "Înregistrare",
+        "desc": "Contactează-ne și alege data dorită. Locurile sunt limitate."
+      },
+      {
+        "num": "02",
+        "title": "Confirmare și plată",
+        "desc": "Primești confirmarea și instrucțiunile de plată."
+      },
+      {
+        "num": "03",
+        "title": "Pregătire",
+        "desc": "Urmezi cursul nostru de pregătire sau studiezi cu materialele recomandate."
+      },
+      {
+        "num": "04",
+        "title": "Ziua examenului",
+        "desc": "Te prezinți cu actul de identitate. Examenul se desfășoară în condiții oficiale ÖSD."
+      },
+      {
+        "num": "05",
+        "title": "Diplomă",
+        "desc": "Rezultatele vin în 4-6 săptămâni. Diploma ÖSD este valabilă pe viață."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Cât timp este valabilă diploma ÖSD?",
+        "a": "Diploma ÖSD nu expiră — este valabilă pe viață și recunoscută internațional."
+      },
+      {
+        "q": "Pot susține examenul fără să urmez cursul?",
+        "a": "Da, poți să te înregistrezi direct pentru examen."
+      },
+      {
+        "q": "Ce se întâmplă dacă pică examenul?",
+        "a": "Poți resusține la data următoare. Taxa se achită din nou."
+      },
+      {
+        "q": "În ce limbă se desfășoară?",
+        "a": "Examenul se desfășoară exclusiv în limba germană."
+      }
+    ]
+  },
+  "abroadPage": {
+    "hero": {
+      "eyebrow": "✈️ Oportunități în Europa",
+      "title": "Studii și carieră în",
+      "titleHighlight": "Occident",
+      "sub": "Germania, Austria și Elveția îți oferă oportunități extraordinare — salarii ridicate, calitate a vieții excepțională și un viitor sigur."
+    },
+    "destTitle": "Destinații",
+    "destTitleHighlight": "populare",
+    "timelineTitle": "Drumul tău spre",
+    "timelineTitleHighlight": "Germania",
+    "cta": {
+      "title": "Vrei să lucrezi în Germania?",
+      "sub": "Consultație gratuită, fără angajament.",
+      "btn": "Consultație gratuită"
+    },
+    "stats": [
+      {
+        "val": "500+",
+        "label": "Absolvenți plecați în Germania"
+      },
+      {
+        "val": "98%",
+        "label": "Rată promovare examene"
+      },
+      {
+        "val": "3-6",
+        "label": "Luni până la B2"
+      },
+      {
+        "val": "10+",
+        "label": "Ani de experiență"
+      }
+    ],
+    "destinations": [
+      {
+        "flag": "🇩🇪",
+        "country": "Germania",
+        "cities": "Berlin, München, Hamburg",
+        "desc": "Cea mai mare economie europeană. Mii de locuri pentru medici, ingineri și IT-iști. Salariu mediu €3.500–5.000/lună.",
+        "req": "📋 Nivel minim: B2-C1",
+        "links": ["Universități renumite", "Burse DAAD", "Recunoaștere diplomă"]
+      },
+      {
+        "flag": "🇦🇹",
+        "country": "Austria",
+        "cities": "Viena, Graz, Salzburg",
+        "desc": "Standard de viață excepțional. Viena clasată top 3 cele mai bune orașe din lume.",
+        "req": "📋 Nivel minim: B1-C1",
+        "links": ["ÖSD recunoscut", "Bursă OeAD", "Vize de muncă"]
+      },
+      {
+        "flag": "🇨🇭",
+        "country": "Elveția",
+        "cities": "Zürich, Geneva, Basel",
+        "desc": "Cel mai mare salariu mediu din lume. Calitate a vieții extraordinară.",
+        "req": "📋 Nivel minim: B2-C1",
+        "links": ["Universități ETH", "Burse cantonale", "Piața muncii"]
+      }
+    ],
+    "timeline": [
+      {
+        "step": "1",
+        "title": "Evaluare lingvistică",
+        "desc": "Testăm nivelul tău și stabilim un plan de studiu personalizat."
+      },
+      {
+        "step": "2",
+        "title": "Curs intensiv",
+        "desc": "Urmezi cursul cu focus pe domeniul tău și pe cerințele țării alese."
+      },
+      {
+        "step": "3",
+        "title": "Examen ÖSD",
+        "desc": "Susții examenul și obții diploma recunoscută internațional."
+      },
+      {
+        "step": "4",
+        "title": "Pregătire dosare",
+        "desc": "Te ajutăm cu recunoașterea diplomei și scrisorile de motivație."
+      },
+      {
+        "step": "5",
+        "title": "Plecare",
+        "desc": "Primești resurse pentru o integrare ușoară în noua țară."
+      }
+    ]
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "🏛️ Din 2012 cu pasiune",
+      "title": "Despre",
+      "titleHighlight": "CLG Deutsch",
+      "sub": "O școală fondată din convingerea că fiecare om merită șansa de a-și construi un viitor mai bun."
+    },
+    "storyTitle": "Cum am",
+    "storyTitleHighlight": "început",
+    "storyLead": "CLG Chișinău a fost fondată în 2012 de un grup de profesori pasionați, cu misiunea de a oferi educație lingvistică germană de calitate europeană.",
+    "storyP1": "În primii ani, am pornit cu o singură sală și 20 de studenți. Astăzi avem sute de absolvenți care trăiesc, lucrează și studiază în spațiul german-vorbitor.",
+    "storyP2": "Devenirea noastră ca centru autorizat ÖSD în 2015 a marcat un moment definitoriu.",
+    "milestonesTitle": "Momente cheie",
+    "teamTitle": "Echipa",
+    "teamTitleHighlight": "noastră",
+    "teamLead": "Profesori cu experiență internațională, pasionați de limbă și dedicați succesului fiecărui student.",
+    "valuesTitle": "Valorile",
+    "valuesTitleHighlight": "noastre",
+    "cta": {
+      "title": "Vino să ne cunoști!",
+      "sub": "Str. Pușchin 5, Chișinău. Luni–Sâmbătă 9:00–20:00.",
+      "btn": "Adresă și hartă"
+    },
+    "stats": [
+      {
+        "val": "2012",
+        "label": "Anul fondării"
+      },
+      {
+        "val": "1500+",
+        "label": "Absolvenți fericiți"
+      },
+      {
+        "val": "98%",
+        "label": "Rată promovare ÖSD"
+      },
+      {
+        "val": "6-10",
+        "label": "Studenți per grupă"
+      }
+    ],
+    "team": [
+      {
+        "name": "Elena Popescu",
+        "role": "Director & Profesor Principal",
+        "exp": "⏱ 12 ani experiență",
+        "cert": "🎓 Certificat ÖSD Examinator",
+        "emoji": "👩‍🏫"
+      },
+      {
+        "name": "Andrei Moraru",
+        "role": "Profesor Germană Medicală",
+        "exp": "⏱ 8 ani experiență",
+        "cert": "🎓 DaF Zertifikat C2",
+        "emoji": "👨‍💼"
+      },
+      {
+        "name": "Maria Schmidt",
+        "role": "Profesor Copii & Juniori",
+        "exp": "⏱ 7 ani experiență",
+        "cert": "🎓 Goethe-Institut Zertifikat",
+        "emoji": "👩‍🎓"
+      },
+      {
+        "name": "Ion Lungu",
+        "role": "Profesor Cursuri Business",
+        "exp": "⏱ 10 ani experiență",
+        "cert": "🎓 TestDaF 5/5",
+        "emoji": "👨‍🏫"
+      }
+    ],
+    "values": [
+      {
+        "icon": "icon-trophy-solid-full",
+        "title": "Excelență",
+        "desc": "Metodele cele mai eficiente, curriculum actualizat conform standardelor europene."
+      },
+      {
+        "icon": "icon-heart-solid-full",
+        "title": "Pasiune",
+        "desc": "Iubim limba germană și transmitem această pasiune fiecărui student."
+      },
+      {
+        "icon": "icon-users-solid-full",
+        "title": "Comunitate",
+        "desc": "Nu suntem doar o școală — suntem o comunitate cu vise comune."
+      },
+      {
+        "icon": "icon-globe-solid-full",
+        "title": "Impact real",
+        "desc": "Sute de absolvenți trăiesc și lucrează azi în Germania, Austria și Elveția."
+      }
+    ],
+    "milestones": [
+      {
+        "year": "2012",
+        "text": "Fondarea CLG Chișinău — primele 20 de studenți"
+      },
+      {
+        "year": "2015",
+        "text": "Obținerea statutului de centru autorizat ÖSD"
+      },
+      {
+        "year": "2018",
+        "text": "Lansarea programului special pentru medici"
+      },
+      {
+        "year": "2021",
+        "text": "1000 de absolvenți — o etapă istorică"
+      },
+      {
+        "year": "2024",
+        "text": "Extinderea la 5 programe specializate distincte"
+      }
+    ]
+  },
+  "medicalPage": {
+    "hero": {
+      "eyebrow": "🩺 Program specializat",
+      "title": "Germana pentru",
+      "titleHighlight": "Medici",
+      "sub": "Program dedicat exclusiv profesioniștilor din sănătate care doresc să profeseze în Germania, Austria sau Elveția."
+    },
+    "profTitle": "Pentru cine este",
+    "profTitleHighlight": "acest program?",
+    "navTitle": "Explorează",
+    "navTitleHighlight": "programul complet",
+    "readMore": "Află mai mult",
+    "cta": {
+      "title": "Ești medic și vrei să lucrezi în Germania?",
+      "sub": "Consultație gratuită și plan personalizat.",
+      "btn": "Consultație gratuită"
+    },
+    "stats": [
+      {
+        "val": "B2-C1",
+        "label": "Nivel cerut în Germania"
+      },
+      {
+        "val": "€4.500+",
+        "label": "Salariu mediu lunar"
+      },
+      {
+        "val": "6 luni",
+        "label": "Durata medie program"
+      },
+      {
+        "val": "100%",
+        "label": "Recunoaștere diplomă"
+      }
+    ],
+    "professions": [
+      {
+        "iconClass": "icon-stethoscope-solid-full",
+        "name": "Medici generaliști"
+      },
+      {
+        "iconClass": "icon-tooth-solid-full",
+        "name": "Stomatologi"
+      },
+      {
+        "iconClass": "icon-pills-solid-full",
+        "name": "Farmaciști"
+      },
+      {
+        "iconClass": "icon-brain-solid-full",
+        "name": "Medici specialiști"
+      },
+      {
+        "iconClass": "icon-running-solid-full",
+        "name": "Fizioterapeuți"
+      },
+      {
+        "iconClass": "icon-user-nurse-solid-full",
+        "name": "Asistenți medicali"
+      }
+    ],
+    "subPages": [
+      {
+        "title": "Ofertă generală",
+        "desc": "Prezentarea completă a programului, obiective și structura cursului.",
+        "iconClass": "icon-file-alt-solid-full",
+        "link": "/cursuri-medici/oferta-generala",
+        "tag": "Start aici"
+      },
+      {
+        "title": "Mod de desfășurare",
+        "desc": "Program, frecvență, formate disponibile și opțiuni flexibile.",
+        "iconClass": "icon-calendar-alt-solid-full",
+        "link": "/cursuri-medici/mod-desfasurare",
+        "tag": "Orar"
+      },
+      {
+        "title": "Suport de curs",
+        "desc": "Manuale, fișe de lucru, materiale audio și grup online.",
+        "iconClass": "icon-book-solid-full",
+        "link": "/cursuri-medici/suport-curs",
+        "tag": "Resurse"
+      },
+      {
+        "title": "Mod de predare",
+        "desc": "Metodologia specializată pentru profesioniști din medicină.",
+        "iconClass": "icon-chalkboard-teacher-solid-full",
+        "link": "/cursuri-medici/mod-predare",
+        "tag": "Metodologie"
+      },
+      {
+        "title": "Pregătire examene",
+        "desc": "Fachsprachenprüfung, ÖSD B2/C1 și alte examene obligatorii.",
+        "iconClass": "icon-check-circle-solid-full",
+        "link": "/cursuri-medici/pregatire-examene",
+        "tag": "Examene"
+      }
+    ]
+  },
+  "medicalGeneral": {
+    "eyebrow": "🩺 Cursuri pentru Medici",
+    "title": "Ofertă Generală",
+    "sub": "Cursul nostru de germană medicală este conceput special pentru medici și alți profesioniști din sănătate.",
+    "backLabel": "Înapoi la Cursuri Medici",
+    "cta": {
+      "title": "Interesat de program?",
+      "sub": "Contactează-ne pentru detalii.",
+      "btn": "Contactează-ne"
+    },
+    "sections": [
+      {
+        "title": "Obiectivul programului",
+        "type": "text",
+        "body": "Pregătim medici pentru a comunica fluent în orice context profesional din Germania, Austria sau Elveția."
+      },
+      {
+        "title": "Structura cursului",
+        "type": "list",
+        "items": [
+          "Modul 1: Vocabular medical de bază",
+          "Modul 2: Comunicarea cu pacientul",
+          "Modul 3: Documentație clinică",
+          "Modul 4: Comunicare în echipă",
+          "Modul 5: Pregătire Fachsprachenprüfung"
+        ]
+      },
+      {
+        "title": "Niveluri disponibile",
+        "type": "list",
+        "items": [
+          "B1 Medical — 3 luni | 4 ore/săpt. | max 6 persoane",
+          "B2 Medical — 4 luni | 4 ore/săpt. | max 6 persoane",
+          "C1 Medical — 4 luni | 5 ore/săpt. | individual"
+        ]
+      },
+      {
+        "title": "La final vei putea...",
+        "type": "list",
+        "items": [
+          "Realiza anamneza completă în germană",
+          "Redacta epicrize și scrisori medicale",
+          "Prezenta cazuri clinice colegilor",
+          "Susține Fachsprachenprüfung",
+          "Comunica cu angajatorul german"
+        ]
+      }
+    ],
+    "nav": {
+      "title": "Explorează și celelalte",
+      "titleHighlight": "secțiuni",
+      "general": "📋 Ofertă generală",
+      "format": "📅 Mod de desfășurare",
+      "support": "📚 Suport de curs",
+      "teaching": "🎯 Mod de predare",
+      "exam": "✅ Pregătire examene"
+    }
+  },
+  "medicalFormat": {
+    "eyebrow": "🩺 Cursuri pentru Medici",
+    "title": "Mod de Desfășurare",
+    "sub": "Cursurile sunt structurate pentru a se potrivi cu programul încărcat al profesioniștilor din medicină.",
+    "backLabel": "Înapoi la Cursuri Medici",
+    "cta": {
+      "title": "Vrei să știi mai mult?",
+      "sub": "Contactează-ne pentru orar detaliat.",
+      "btn": "Contactează-ne"
+    },
+    "sections": [
+      {
+        "title": "Formate disponibile",
+        "type": "text",
+        "body": "Oferim mai multe formate care pot fi combinate după necesitate."
+      },
+      {
+        "title": "Program seară",
+        "type": "list",
+        "items": [
+          "Luni + Miercuri: 18:30 – 20:30",
+          "Marți + Joi: 18:30 – 20:30",
+          "4 ore pe săptămână",
+          "Grup de maximum 6 participanți"
+        ]
+      },
+      {
+        "title": "Program weekend",
+        "type": "list",
+        "items": [
+          "Sâmbătă: 09:00 – 13:00 (4 ore intensive)",
+          "Sau: Sâmbătă + Duminică (2+2 ore)",
+          "Ideal pentru cei cu program încărcat în cursul săptămânii"
+        ]
+      },
+      {
+        "title": "Format hibrid",
+        "type": "list",
+        "items": [
+          "50% sesiuni fizice",
+          "50% sesiuni online via Zoom",
+          "Înregistrări disponibile pentru recuperare",
+          "Aplicație mobilă pentru exersare zilnică"
+        ]
+      }
+    ]
+  },
+  "medicalSupport": {
+    "eyebrow": "🩺 Cursuri pentru Medici",
+    "title": "Suport de Curs",
+    "sub": "Fiecare student primește un pachet complet de materiale didactice specializate.",
+    "backLabel": "Înapoi la Cursuri Medici",
+    "cta": {
+      "title": "Întrebări despre materiale?",
+      "sub": "Contactează-ne pentru detalii.",
+      "btn": "Contactează-ne"
+    },
+    "sections": [
+      {
+        "title": "Manual principal",
+        "type": "list",
+        "items": [
+          "\"Deutsch für Ärzte\" — ediția actualizată",
+          "Glosar medical german-român cu 3000+ termeni",
+          "Fișe de gramatică adaptate",
+          "Exerciții practice cu situații clinice"
+        ]
+      },
+      {
+        "title": "Materiale audio-video",
+        "type": "list",
+        "items": [
+          "Înregistrări de consultații autentice",
+          "Prezentări de caz video în germană",
+          "Podcast săptămânal \"Medizin auf Deutsch\"",
+          "Videoclipuri de pronunție"
+        ]
+      },
+      {
+        "title": "Suport digital",
+        "type": "list",
+        "items": [
+          "Grup Telegram dedicat cu 500+ membri",
+          "Sesiuni Q&A săptămânale",
+          "Acces la biblioteca digitală CLG Medical",
+          "Simulator Fachsprachenprüfung online"
+        ]
+      }
+    ]
+  },
+  "medicalTeaching": {
+    "eyebrow": "🩺 Cursuri pentru Medici",
+    "title": "Mod de Predare",
+    "sub": "Combinăm abordarea comunicativă cu simulări clinice reale.",
+    "backLabel": "Înapoi la Cursuri Medici",
+    "cta": {
+      "title": "Vrei să cunoști metodologia?",
+      "sub": "Contactează-ne pentru o lecție demonstrativă.",
+      "btn": "Lecție demo"
+    },
+    "sections": [
+      {
+        "title": "Metodologia noastră",
+        "type": "text",
+        "body": "Fiecare lecție reproduce situații din spitalele germane, pregătindu-te pentru prima zi de muncă."
+      },
+      {
+        "title": "Tehnici principale",
+        "type": "list",
+        "items": [
+          "Role-play clinic: medic-pacient, medic-medic",
+          "Analiza cazurilor clinice reale",
+          "Dictare medicală și corectare documente",
+          "Dezbatere pe teme de etică medicală",
+          "Prezentări de caz cu feedback imediat"
+        ]
+      },
+      {
+        "title": "Evaluare continuă",
+        "type": "list",
+        "items": [
+          "Mini-test la fiecare a 4-a lecție",
+          "Raport de progres lunar personalizat",
+          "Sesiune individuală de feedback",
+          "Evaluare finală cu simulare Fachsprachenprüfung"
+        ]
+      },
+      {
+        "title": "Calificările profesorilor",
+        "type": "list",
+        "items": [
+          "Minimum 8 ani predare germană medicală",
+          "Stagii în clinici din Germania și Austria",
+          "Formare continuă anuală ÖSD și Goethe",
+          "Experiență personală cu sistemul medical german"
+        ]
+      }
+    ]
+  },
+  "medicalExam": {
+    "eyebrow": "🩺 Cursuri pentru Medici",
+    "title": "Pregătire Examene",
+    "sub": "Te pregătim pentru toate examenele obligatorii necesare recunoașterii diplomei în Germania.",
+    "backLabel": "Înapoi la Cursuri Medici",
+    "cta": {
+      "title": "Pregătit pentru examen?",
+      "sub": "Înregistrează-te acum — locuri limitate.",
+      "btn": "Înregistrează-te"
+    },
+    "sections": [
+      {
+        "title": "Fachsprachenprüfung (FSP)",
+        "type": "list",
+        "items": [
+          "Examen obligatoriu în toate landurile germane",
+          "Durată: 60 minute",
+          "Nivel minim: B2",
+          "Rata noastră de succes: 97% din prima încercare",
+          "8 simulări complete incluse în curs"
+        ]
+      },
+      {
+        "title": "ÖSD Zertifikat B2 / C1",
+        "type": "list",
+        "items": [
+          "Alternativă la FSP — recunoscută în Austria",
+          "4 module: Lectură, Scriere, Ascultare, Vorbire",
+          "Sesiuni lunare la centrul nostru",
+          "Diplomă valabilă pe viață"
+        ]
+      },
+      {
+        "title": "Approbation — după examen",
+        "type": "list",
+        "items": [
+          "Recunoașterea diplomei (Anerkennung)",
+          "Înregistrare la Ärztekammer",
+          "Obținerea Berufserlaubnis",
+          "Sprijin documentar din echipa noastră"
+        ]
+      }
+    ]
   }
 }

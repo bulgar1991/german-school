@@ -1,74 +1,25 @@
 <header class="header" [class.header--scrolled]="scrolled()">
-  <div class="container-screen-3xl mx-auto lg:px-desktop px-mobile">
+  <div class="container mx-auto lg:px-desktop px-mobile">
     <div class="header__inner">
-
-      <!-- Logo -->
       <a class="header__logo" routerLink="/" aria-label="CLG Chișinău">
         <img src="assets/images/site-logo.svg" alt="CLG Chișinău" class="header__logo-image" />
       </a>
 
-      <!-- Desktop nav -->
       <nav class="header__nav" aria-label="Navigare principală">
         <ul class="header__nav-list">
           @for (link of navLinks; track link.anchor) {
-            <li class="header__nav-item">
-
-              @if (link.children?.length) {
-
-                <!-- Trigger button for mat-menu -->
-                <button
-                  class="header__nav-link header__nav-link--has-dropdown"
-                  [matMenuTriggerFor]="levelOneMenu">
-                  {{ link.key | translate }}
-                  <svg class="header__dropdown-caret" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-
-                <!-- Level 1 mat-menu -->
-                <mat-menu #levelOneMenu="matMenu" class="header-menu">
-                  @for (child of link.children; track child.anchor) {
-                    @if (child.children?.length) {
-                      <!-- Has nested submenu -->
-                      <button mat-menu-item [matMenuTriggerFor]="levelTwoMenu" class="header-menu__item">
-                        {{ child.key | translate }}
-                      </button>
-
-                      <!-- Level 2 mat-menu -->
-                      <mat-menu #levelTwoMenu="matMenu" class="header-menu">
-                        @for (sub of child.children; track sub.anchor) {
-                          <a mat-menu-item class="header-menu__item"
-                             [routerLink]="sub.anchor">
-                            {{ sub.key | translate }}
-                          </a>
-                        }
-                      </mat-menu>
-
-                    } @else {
-                      <a mat-menu-item class="header-menu__item"
-                         [routerLink]="child.anchor">
-                        {{ child.key | translate }}
-                      </a>
-                    }
-                  }
-                </mat-menu>
-
-              } @else {
-                <a
-                  class="header__nav-link"
-                  [routerLink]="link.anchor"
-                  routerLinkActive="header__nav-link--active"
-                  [routerLinkActiveOptions]="{ exact: true }">
-                  {{ link.key | translate }}
-                </a>
-              }
-
+            <li>
+              <a class="header__nav-link"
+                 [routerLink]="link.anchor"
+                 routerLinkActive="header__nav-link--active"
+                 [routerLinkActiveOptions]="{ exact: link.anchor === '/' }">
+                {{ link.key | translate }}
+              </a>
             </li>
           }
         </ul>
       </nav>
 
-      <!-- Actions -->
       <div class="header__actions">
         <a class="header__contact-link" routerLink="/contact">
           <i class="icon icon-phone-solid-full"></i>
@@ -77,12 +28,8 @@
         <app-language-switcher />
       </div>
 
-      <!-- Hamburger -->
-      <button
-        class="header__hamburger"
-        (click)="openSidebar()"
-        aria-label="Deschide meniu"
-        [attr.aria-expanded]="sidebarOpen()">
+      <button class="header__hamburger" (click)="openSidebar()"
+              aria-label="Deschide meniu" [attr.aria-expanded]="sidebarOpen()">
         <span></span><span></span><span></span>
       </button>
 
@@ -90,77 +37,34 @@
   </div>
 </header>
 
-<!-- Mobile sidebar -->
 @if (sidebarOpen()) {
   <div class="sidebar-overlay" (click)="closeSidebar()" aria-hidden="true"></div>
-
-  <aside class="sidebar" role="dialog" aria-modal="true" aria-label="Meniu navigare">
-
+  <aside class="sidebar" role="dialog" aria-modal="true">
     <div class="sidebar__header">
       <a class="sidebar__logo" routerLink="/" (click)="closeSidebar()">
         <img src="assets/images/site-logo.svg" alt="CLG Chișinău" class="sidebar__logo-img" />
       </a>
-      <button class="sidebar__close" (click)="closeSidebar()" aria-label="Închide meniu">
+      <button class="sidebar__close" (click)="closeSidebar()">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
       </button>
     </div>
-
-    <nav class="sidebar__nav" aria-label="Meniu mobil">
+    <nav class="sidebar__nav">
       @for (link of navLinks; track link.anchor) {
-
-        @if (link.children?.length) {
-          <button
-            class="sidebar__link sidebar__link--parent"
-            [class.sidebar__link--open]="openMobile() === link.key"
-            (click)="toggleMobile(link.key)">
-            {{ link.key | translate }}
-            <svg class="sidebar__caret" width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-
-          @if (openMobile() === link.key) {
-            @for (child of link.children; track child.anchor) {
-              <a class="sidebar__link sidebar__link--child"
-                 [routerLink]="child.anchor"
-                 routerLinkActive="sidebar__link--active"
-                 (click)="closeSidebar()">
-                {{ child.key | translate }}
-              </a>
-              @if (child.children?.length) {
-                @for (sub of child.children; track sub.anchor) {
-                  <a class="sidebar__link sidebar__link--sub"
-                     [routerLink]="sub.anchor"
-                     routerLinkActive="sidebar__link--active"
-                     (click)="closeSidebar()">
-                    {{ sub.key | translate }}
-                  </a>
-                }
-              }
-            }
-          }
-
-        } @else {
-          <a class="sidebar__link"
-             [routerLink]="link.anchor"
-             routerLinkActive="sidebar__link--active"
-             [routerLinkActiveOptions]="{ exact: true }"
-             (click)="closeSidebar()">
-            {{ link.key | translate }}
-          </a>
-        }
-
+        <a class="sidebar__link" [routerLink]="link.anchor"
+           routerLinkActive="sidebar__link--active"
+           [routerLinkActiveOptions]="{ exact: link.anchor === '/' }"
+           (click)="closeSidebar()">
+          {{ link.key | translate }}
+        </a>
       }
     </nav>
-
     <div class="sidebar__footer">
       <app-language-switcher />
       <a class="btn btn--primary" style="width:100%" routerLink="/contact" (click)="closeSidebar()">
         {{ 'nav.contact' | translate }}
       </a>
     </div>
-
   </aside>
 }
