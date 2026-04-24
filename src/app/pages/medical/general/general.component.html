@@ -1,0 +1,82 @@
+<div class="msub-page">
+  <section class="page-hero-block">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <a class="msub-back" routerLink="/cursuri-medici">
+        <i class="icon icon-arrow-left-solid-full"></i>
+        {{ 'medicalGeneral.backLabel' | translate }}
+      </a>
+      <span class="page-hero-block__eyebrow">{{ 'medicalGeneral.eyebrow' | translate }}</span>
+      <h1 class="page-hero-block__title">{{ 'medicalGeneral.title' | translate }}</h1>
+      <p class="page-hero-block__sub">{{ 'medicalGeneral.sub' | translate }}</p>
+    </div>
+  </section>
+
+  <section class="msub-content-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="msub-content">
+        @for (s of sections(); track s.title) {
+          <div class="msub-block">
+            <h3 class="msub-block__title">{{ s.title }}</h3>
+            @if (s.type === 'text') {
+              <p class="msub-block__text">{{ s.body }}</p>
+            }
+            @if (s.type === 'list') {
+              <ul class="msub-block__list">
+                @for (item of s.items; track item) {
+                  <li><i class="icon icon-check-solid-full"></i>{{ item }}</li>
+                }
+              </ul>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="msub-nav-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <h3 class="msub-nav-title"
+        >{{ 'medicalGeneral.nav.title' | translate }}
+        <span>{{ 'medicalGeneral.nav.titleHighlight' | translate }}</span></h3
+      >
+      <div class="msub-nav">
+        <a
+          class="msub-nav__link"
+          routerLink="/cursuri-medici/oferta-generala"
+          routerLinkActive="msub-nav__link--active">
+          {{ 'medicalGeneral.nav.general' | translate }}
+        </a>
+        <a
+          class="msub-nav__link"
+          routerLink="/cursuri-medici/mod-desfasurare"
+          routerLinkActive="msub-nav__link--active"
+          >{{ 'medicalGeneral.nav.format' | translate }}</a
+        >
+        <a class="msub-nav__link" routerLink="/cursuri-medici/suport-curs" routerLinkActive="msub-nav__link--active">{{
+          'medicalGeneral.nav.support' | translate
+        }}</a>
+        <a class="msub-nav__link" routerLink="/cursuri-medici/mod-predare" routerLinkActive="msub-nav__link--active">{{
+          'medicalGeneral.nav.teaching' | translate
+        }}</a>
+        <a
+          class="msub-nav__link"
+          routerLink="/cursuri-medici/pregatire-examene"
+          routerLinkActive="msub-nav__link--active"
+          >{{ 'medicalGeneral.nav.exam' | translate }}</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="msub-cta-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="page-cta-block">
+        <div>
+          <h3 class="page-cta-block__title">{{ 'medicalGeneral.cta.title' | translate }}</h3>
+          <p class="page-cta-block__sub">{{ 'medicalGeneral.cta.sub' | translate }}</p>
+        </div>
+        <a class="page-cta-block__btn" routerLink="/contact">{{ 'medicalGeneral.cta.btn' | translate }}</a>
+      </div>
+    </div>
+  </section>
+</div>

@@ -23,34 +23,64 @@
     "enroll": "Înscrie-te",
     "items": [
       {
+        "level": "A1.1",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană pentru începători absoluți."
+      },
+      {
         "level": "A1.2",
         "date": "1 ianuarie",
         "time": "18:00",
         "desc": "Curs de germană pentru începători avansați."
       },
       {
-        "level": "B1.2",
-        "date": "14 ianuarie",
-        "time": "18:00",
-        "desc": "Curs de germană nivel intermediar."
-      },
-      {
         "level": "A2.1",
-        "date": "21 ianuarie",
+        "date": "1 ianuarie",
         "time": "18:00",
-        "desc": "Curs de germană nivel elementar."
+        "desc": "Curs de germană nivel elementar (partea 1)."
       },
       {
         "level": "A2.2",
-        "date": "4 februarie",
+        "date": "1 ianuarie",
         "time": "18:00",
-        "desc": "Continuare curs elementar."
+        "desc": "Curs de germană nivel elementar avansat."
+      },
+      {
+        "level": "B1.1",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel intermediar (partea 1)."
+      },
+      {
+        "level": "B1.2",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel intermediar avansat."
       },
       {
         "level": "B2.1",
-        "date": "11 februarie",
-        "time": "09:00",
-        "desc": "Curs avansat de germană."
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel intermediar superior (partea 1)."
+      },
+      {
+        "level": "B2.2",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel intermediar superior avansat."
+      },
+      {
+        "level": "C1",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel avansat."
+      },
+      {
+        "level": "C2",
+        "date": "1 ianuarie",
+        "time": "18:00",
+        "desc": "Curs de germană nivel aproape nativ."
       }
     ]
   },

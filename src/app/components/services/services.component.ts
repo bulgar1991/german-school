@@ -22,10 +22,6 @@ export class ServicesComponent implements AfterViewInit, OnDestroy {
     { icon: 'assets/images/services/osd.svg', titleKey: 'services.items.1.title', link: '/examene-osd' },
     { icon: 'assets/images/services/writing-pad.svg', titleKey: 'services.items.2.title', link: '/pregatire-examene' },
     { icon: 'assets/images/services/language.svg', titleKey: 'services.items.3.title', link: '/cursuri-limbi-moderne' },
-    { icon: 'assets/images/services/chat.svg', titleKey: 'services.items.0.title', link: '/cursuri' },
-    { icon: 'assets/images/services/osd.svg', titleKey: 'services.items.1.title', link: '/examene-osd' },
-    { icon: 'assets/images/services/writing-pad.svg', titleKey: 'services.items.2.title', link: '/pregatire-examene' },
-    { icon: 'assets/images/services/language.svg', titleKey: 'services.items.3.title', link: '/cursuri-limbi-moderne' },
   ]
 
   ngAfterViewInit(): void {

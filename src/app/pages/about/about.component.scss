@@ -1,0 +1,123 @@
+$purple:       #7c3aed;
+$purple-light: #a855f7;
+$bg:           #2d2d2d;
+$bg-dark:      #222232;
+$bg-card:      rgba(255,255,255,.04);
+$border:       rgba(255,255,255,.08);
+$text:         #fff;
+$muted:        rgba(255,255,255,.6);
+
+.about-page { background: $bg; }
+
+.about-hero {
+  background: $bg-dark; padding: 5rem 0 4rem; border-bottom: 1px solid $border;
+
+  &__eyebrow {
+    display: block; width: fit-content;
+    background: rgba($purple,.15); border: 1px solid rgba($purple,.35);
+    color: $purple-light; font-size: .8125rem; font-weight: 600;
+    letter-spacing: .08em; text-transform: uppercase;
+    padding: .3rem .875rem; border-radius: 100px; margin-bottom: 1.25rem;
+  }
+
+  &__title {
+    font-size: clamp(2.25rem,5vw,3.5rem); font-weight: 800; color: $text;
+    line-height: 1.12; margin: 0 0 1.25rem; letter-spacing: -.02em;
+    span { color: $purple-light; }
+  }
+
+  &__sub { font-size: clamp(1rem,1.5vw,1.125rem); color: $muted; line-height: 1.75; margin: 0; max-width: 560px; }
+}
+
+.about-stats-section { padding: 3.5rem 0; background: $bg-dark; border-bottom: 1px solid $border; }
+
+.about-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 1.5rem; text-align: center;
+}
+
+.about-stat {
+  &__val   { display: block; font-size: clamp(2rem,4vw,3rem); font-weight: 800; color: $purple-light; letter-spacing: -.02em; }
+  &__label { font-size: .875rem; color: $muted; margin-top: .25rem; }
+}
+
+.about-story-section { padding: 4rem 0; background: $bg; }
+
+.about-story {
+  display: grid; grid-template-columns: 1fr 360px; gap: 3rem; align-items: start;
+  @media (max-width: 900px) { grid-template-columns: 1fr; }
+}
+
+.about-story {
+  &__title { font-size: clamp(1.5rem,2.5vw,2rem); font-weight: 700; color: $text; margin: 0 0 1rem; span { color: $purple-light; } }
+  &__lead  { font-size: 1rem; color: rgba(255,255,255,.75); line-height: 1.75; margin: 0 0 1rem; }
+  &__para  { font-size: .9375rem; color: $muted; line-height: 1.75; margin: 0 0 .875rem; }
+}
+
+.about-milestones {
+  background: $bg-card; border: 1px solid $border; border-radius: 16px; padding: 1.75rem;
+
+  &__title { font-size: 1rem; font-weight: 700; color: $text; margin: 0 0 1.25rem; }
+}
+
+.about-milestone {
+  display: flex; align-items: flex-start; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid $border;
+  &:last-child { border-bottom: none; }
+  &__year { font-size: .875rem; font-weight: 800; color: $purple-light; white-space: nowrap; min-width: 36px; }
+  &__text { font-size: .875rem; color: $muted; line-height: 1.55; }
+}
+
+.about-team-section { padding: 4rem 0; background: $bg-dark; border-top: 1px solid $border; }
+.about-values-section { padding: 4rem 0; background: $bg; border-top: 1px solid $border; }
+.about-cta-section { padding: 4rem 0; background: $bg-dark; border-top: 1px solid $border; }
+
+.about-section-title {
+  font-size: clamp(1.5rem,2.5vw,2rem); font-weight: 700; color: $text; margin: 0 0 .5rem;
+  span { color: $purple-light; }
+}
+
+.about-section-lead { font-size: 1rem; color: $muted; line-height: 1.7; margin: 0 0 2rem; max-width: 600px; }
+
+.about-team {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 1.25rem; margin-top: 2rem;
+}
+
+.team-card {
+  background: $bg-card; border: 1px solid $border; border-radius: 16px; padding: 1.75rem 1.5rem;
+  text-align: center; display: flex; flex-direction: column; gap: .5rem; transition: border-color .2s;
+  &:hover { border-color: rgba($purple,.4); }
+  &__avatar { font-size: 3.5rem; margin-bottom: .5rem; line-height: 1; }
+  &__name   { font-size: 1rem; font-weight: 700; color: $text; margin: 0; }
+  &__role   { font-size: .8125rem; color: $purple-light; margin: 0; }
+  &__exp,
+  &__cert   { font-size: .8rem; color: $muted; }
+}
+
+.about-values {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1.25rem; margin-top: 2rem;
+}
+
+.value-card {
+  background: $bg-card; border: 1px solid $border; border-radius: 16px; padding: 1.75rem 1.5rem; transition: border-color .2s;
+  &:hover { border-color: rgba($purple,.4); }
+  &__icon {
+    width: 48px; height: 48px; border-radius: 12px; background: rgba($purple,.15); color: $purple-light;
+    display: flex; align-items: center; justify-content: center; margin-bottom: 1.125rem;
+    i { font-size: 1.25rem; }
+  }
+  &__title { font-size: 1rem; font-weight: 700; color: $text; margin: 0 0 .5rem; }
+  &__desc  { font-size: .875rem; color: $muted; line-height: 1.65; margin: 0; }
+}
+
+.about-cta {
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+  background: $purple; border-radius: 20px; padding: 3rem 3.5rem;
+  @media (max-width: 768px) { flex-direction: column; padding: 2rem 1.5rem; text-align: center; }
+  &__title { font-size: clamp(1.25rem,2.5vw,1.625rem); font-weight: 700; color: #fff; margin: 0 0 .375rem; }
+  &__sub   { font-size: .9375rem; color: rgba(255,255,255,.8); margin: 0; }
+  &__btn   {
+    display: inline-flex; align-items: center; padding: .875rem 2.25rem;
+    background: #fff; color: $purple; font-size: .9375rem; font-weight: 700;
+    border-radius: 100px; text-decoration: none; white-space: nowrap; flex-shrink: 0;
+    transition: opacity .15s; &:hover { opacity: .9; }
+  }
+}

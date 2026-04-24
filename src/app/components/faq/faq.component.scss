@@ -1,54 +1,26 @@
 .faq {
-  background: #2d2d2d;
-  padding: 3.5rem 0 4rem;
-
   &__title {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 2.5rem;
+    @apply 3xl:text-5xl 2xl:text-4xl xl:text-3xl lg:text-2xl text-xl font-bold text-white;
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  &__item {
-    padding: 1.5rem 1rem 1.5rem 0;
-
-    @media (min-width: 769px) {
-      &:nth-child(odd)  { padding-right: 3rem; }
-      &:nth-child(even) { padding-left: 3rem; }
-    }
+    @apply grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-14 gap-4 mt-10;
   }
 
   &__question {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 100%;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: left;
-    cursor: pointer;
-    padding: 0;
-    line-height: 1.45;
+    @apply w-full flex justify-between items-center lg:gap-8 gap-4 cursor-pointer;
+  }
+
+  &__question-title {
+    @apply text-2xl text-white font-bold;
   }
 
   &__icon {
-    flex-shrink: 0;
-    color: #7c3aed;
-    margin-top: 0.1rem;
+    @apply flex-shrink-0 text-[#7c3aed];
+
+    .icon {
+      @apply text-4xl;
+    }
   }
 
   &__answer {

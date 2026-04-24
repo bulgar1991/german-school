@@ -1,0 +1,105 @@
+<div class="courses-page">
+
+  <section class="courses-hero">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <span class="courses-hero__eyebrow">{{ 'coursesPage.hero.eyebrow' | translate }}</span>
+      <h1 class="courses-hero__title">
+        {{ 'coursesPage.hero.title' | translate }}
+        <span>{{ 'coursesPage.hero.titleHighlight' | translate }}</span>
+      </h1>
+      <p class="courses-hero__sub">{{ 'coursesPage.hero.sub' | translate }}</p>
+      <div class="courses-hero__badges">
+        <span class="courses-hero__badge"><i class="icon icon-users-solid-full"></i> {{ 'coursesPage.hero.badge1' | translate }}</span>
+        <span class="courses-hero__badge"><i class="icon icon-certificate-solid-full"></i> {{ 'coursesPage.hero.badge2' | translate }}</span>
+        <span class="courses-hero__badge"><i class="icon icon-clock-solid-full"></i> {{ 'coursesPage.hero.badge3' | translate }}</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="courses-tabs">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="courses-tabs__list">
+        @for (cat of categories; track cat.id) {
+          <button class="courses-tabs__tab" [class.courses-tabs__tab--active]="activeCategory() === cat.id" (click)="activeCategory.set(cat.id)">
+            <i class="icon" [class]="cat.icon"></i>
+            <span>{{ cat.labelKey | translate }}</span>
+          </button>
+        }
+      </div>
+    </div>
+  </div>
+
+  <section class="courses-levels">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="courses-levels__head">
+        <h2 class="courses-levels__title">{{ 'coursesPage.tabs.' + activeCategory() | translate }}</h2>
+        <p class="courses-levels__sub">{{ 'coursesPage.content.sub' | translate }}</p>
+      </div>
+      <div class="courses-levels__grid">
+        @for (level of activeLevels; track level.code) {
+          <div class="level-card">
+            <div class="level-card__top">
+              <span class="level-card__code">{{ level.code }}</span>
+              <span class="level-card__label">{{ level.label }}</span>
+            </div>
+            <p class="level-card__desc">{{ level.desc }}</p>
+            <ul class="level-card__topics">
+              @for (t of level.topics; track t) {
+                <li><i class="icon icon-check-solid-full"></i>{{ t }}</li>
+              }
+            </ul>
+            <div class="level-card__meta">
+              <span><i class="icon icon-clock-solid-full"></i> {{ level.duration }}</span>
+              <span><i class="icon icon-calendar-solid-full"></i> {{ level.hours }}</span>
+              <span><i class="icon icon-users-solid-full"></i> {{ level.format }}</span>
+            </div>
+            <button class="level-card__btn" (click)="openEnroll(level)">
+              {{ 'coursesPage.content.enrollBtn' | translate }}
+            </button>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-why">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <h2 class="courses-why__title">{{ 'coursesPage.whyUs.title' | translate }} <span>{{ 'coursesPage.whyUs.titleHighlight' | translate }}</span></h2>
+      <div class="courses-why__grid">
+        <div class="why-card">
+          <div class="why-card__icon"><i class="icon icon-users-solid-full"></i></div>
+          <h3 class="why-card__title">{{ 'coursesPage.whyUs.card1Title' | translate }}</h3>
+          <p class="why-card__desc">{{ 'coursesPage.whyUs.card1Desc' | translate }}</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i class="icon icon-graduation-cap-solid-full"></i></div>
+          <h3 class="why-card__title">{{ 'coursesPage.whyUs.card2Title' | translate }}</h3>
+          <p class="why-card__desc">{{ 'coursesPage.whyUs.card2Desc' | translate }}</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i class="icon icon-award-solid-full"></i></div>
+          <h3 class="why-card__title">{{ 'coursesPage.whyUs.card3Title' | translate }}</h3>
+          <p class="why-card__desc">{{ 'coursesPage.whyUs.card3Desc' | translate }}</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i class="icon icon-clock-solid-full"></i></div>
+          <h3 class="why-card__title">{{ 'coursesPage.whyUs.card4Title' | translate }}</h3>
+          <p class="why-card__desc">{{ 'coursesPage.whyUs.card4Desc' | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-cta-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="courses-cta">
+        <div>
+          <h3 class="courses-cta__title">{{ 'coursesPage.cta.title' | translate }}</h3>
+          <p class="courses-cta__sub">{{ 'coursesPage.cta.sub' | translate }}</p>
+        </div>
+        <a class="courses-cta__btn" routerLink="/contact">{{ 'coursesPage.cta.btn' | translate }}</a>
+      </div>
+    </div>
+  </section>
+
+</div>

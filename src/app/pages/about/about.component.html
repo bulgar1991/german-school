@@ -1,0 +1,91 @@
+<div class="about-page">
+
+  <section class="about-hero">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <span class="about-hero__eyebrow">{{ 'aboutPage.hero.eyebrow' | translate }}</span>
+      <h1 class="about-hero__title">{{ 'aboutPage.hero.title' | translate }} <span>{{ 'aboutPage.hero.titleHighlight' | translate }}</span></h1>
+      <p class="about-hero__sub">{{ 'aboutPage.hero.sub' | translate }}</p>
+    </div>
+  </section>
+
+  <section class="about-stats-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="about-stats">
+        @for (s of stats(); track s.label) {
+          <div class="about-stat">
+            <span class="about-stat__val">{{ s.val }}</span>
+            <span class="about-stat__label">{{ s.label }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="about-story-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="about-story">
+        <div class="about-story__text">
+          <h2 class="about-story__title">{{ 'aboutPage.storyTitle' | translate }} <span>{{ 'aboutPage.storyTitleHighlight' | translate }}</span></h2>
+          <p class="about-story__lead">{{ 'aboutPage.storyLead' | translate }}</p>
+          <p class="about-story__para">{{ 'aboutPage.storyP1' | translate }}</p>
+          <p class="about-story__para">{{ 'aboutPage.storyP2' | translate }}</p>
+        </div>
+        <div class="about-milestones">
+          <h3 class="about-milestones__title">{{ 'aboutPage.milestonesTitle' | translate }}</h3>
+          @for (m of milestones(); track m.year) {
+            <div class="about-milestone">
+              <span class="about-milestone__year">{{ m.year }}</span>
+              <span class="about-milestone__text">{{ m.text }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-team-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <h2 class="about-section-title">{{ 'aboutPage.teamTitle' | translate }} <span>{{ 'aboutPage.teamTitleHighlight' | translate }}</span></h2>
+      <p class="about-section-lead">{{ 'aboutPage.teamLead' | translate }}</p>
+      <div class="about-team">
+        @for (t of team(); track t.name) {
+          <div class="team-card">
+            <div class="team-card__avatar">{{ t.emoji }}</div>
+            <h3 class="team-card__name">{{ t.name }}</h3>
+            <p class="team-card__role">{{ t.role }}</p>
+            <span class="team-card__exp">{{ t.exp }}</span>
+            <span class="team-card__cert">{{ t.cert }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="about-values-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <h2 class="about-section-title">{{ 'aboutPage.valuesTitle' | translate }} <span>{{ 'aboutPage.valuesTitleHighlight' | translate }}</span></h2>
+      <div class="about-values">
+        @for (v of values(); track v.title) {
+          <div class="value-card">
+            <div class="value-card__icon"><i class="icon" [class]="v.icon"></i></div>
+            <h3 class="value-card__title">{{ v.title }}</h3>
+            <p class="value-card__desc">{{ v.desc }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="about-cta-section">
+    <div class="container-screen-4xl mx-auto lg:px-8 px-4">
+      <div class="about-cta">
+        <div>
+          <h3 class="about-cta__title">{{ 'aboutPage.cta.title' | translate }}</h3>
+          <p class="about-cta__sub">{{ 'aboutPage.cta.sub' | translate }}</p>
+        </div>
+        <a class="about-cta__btn" routerLink="/contact">{{ 'aboutPage.cta.btn' | translate }}</a>
+      </div>
+    </div>
+  </section>
+
+</div>

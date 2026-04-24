@@ -2,8 +2,8 @@ $icons-font: "icons";
 
 @font-face {
     font-family: $icons-font;
-    src: url("/assets/fonts/icons.woff?9e5eb52f34da53c795916cd42232ee81") format("woff"),
-url("/assets/fonts/icons.woff2?9e5eb52f34da53c795916cd42232ee81") format("woff2");
+    src: url("/assets/fonts/icons.woff?944b9d0977032708663a7ec7c1e8ed20") format("woff"),
+url("/assets/fonts/icons.woff2?944b9d0977032708663a7ec7c1e8ed20") format("woff2");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -24,10 +24,12 @@ $icons-map: (
     "map-location-dot-solid-full": "\f104",
     "facebook-f-brands-solid-full": "\f105",
     "envelope-solid-full": "\f106",
-    "chevron-up-solid-full": "\f107",
-    "chevron-right-solid-full": "\f108",
-    "chevron-left-solid-full": "\f109",
-    "chevron-down-solid-full": "\f10a",
+    "circle-plus-solid-full": "\f107",
+    "circle-minus-solid-full": "\f108",
+    "chevron-up-solid-full": "\f109",
+    "chevron-right-solid-full": "\f10a",
+    "chevron-left-solid-full": "\f10b",
+    "chevron-down-solid-full": "\f10c",
 );
 
 .icon-whatsapp-brands-solid-full:before {
@@ -47,6 +49,12 @@ $icons-map: (
 }
 .icon-envelope-solid-full:before {
     content: map-get($icons-map, "envelope-solid-full");
+}
+.icon-circle-plus-solid-full:before {
+    content: map-get($icons-map, "circle-plus-solid-full");
+}
+.icon-circle-minus-solid-full:before {
+    content: map-get($icons-map, "circle-minus-solid-full");
 }
 .icon-chevron-up-solid-full:before {
     content: map-get($icons-map, "chevron-up-solid-full");
