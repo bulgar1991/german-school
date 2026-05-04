@@ -1,7 +1,7 @@
 @font-face {
     font-family: "icons";
-    src: url("/assets/fonts/icons.woff?944b9d0977032708663a7ec7c1e8ed20") format("woff"),
-url("/assets/fonts/icons.woff2?944b9d0977032708663a7ec7c1e8ed20") format("woff2");
+    src: url("/assets/fonts/icons.woff?e9a77d552a884926e5b2a96ff71e477a") format("woff"),
+url("/assets/fonts/icons.woff2?e9a77d552a884926e5b2a96ff71e477a") format("woff2");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -21,33 +21,60 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-viber-brands-solid-full:before {
     content: "\f102";
 }
-.icon-phone-solid-full:before {
+.icon-users-solid-full:before {
     content: "\f103";
 }
-.icon-map-location-dot-solid-full:before {
+.icon-stethoscope-solid-full:before {
     content: "\f104";
 }
-.icon-facebook-f-brands-solid-full:before {
+.icon-square-check-solid-full:before {
     content: "\f105";
 }
-.icon-envelope-solid-full:before {
+.icon-phone-solid-full:before {
     content: "\f106";
 }
-.icon-circle-plus-solid-full:before {
+.icon-map-location-dot-solid-full:before {
     content: "\f107";
 }
-.icon-circle-minus-solid-full:before {
+.icon-language-solid-full:before {
     content: "\f108";
 }
-.icon-chevron-up-solid-full:before {
+.icon-facebook-f-brands-solid-full:before {
     content: "\f109";
 }
-.icon-chevron-right-solid-full:before {
+.icon-envelope-solid-full:before {
     content: "\f10a";
 }
-.icon-chevron-left-solid-full:before {
+.icon-clock-solid-full:before {
     content: "\f10b";
 }
-.icon-chevron-down-solid-full:before {
+.icon-circle-plus-solid-full:before {
     content: "\f10c";
+}
+.icon-circle-minus-solid-full:before {
+    content: "\f10d";
+}
+.icon-child-solid-full:before {
+    content: "\f10e";
+}
+.icon-chevron-up-solid-full:before {
+    content: "\f10f";
+}
+.icon-chevron-right-solid-full:before {
+    content: "\f110";
+}
+.icon-chevron-left-solid-full:before {
+    content: "\f111";
+}
+.icon-chevron-down-solid-full:before {
+    content: "\f112";
+}
+.icon-calendar-solid-full:before {
+    content: "\f113";
+}
+.icon-briefcase-solid-full:before {
+    content: "\f114";
+}
+.icon-bolt-solid-full:before {
+    content: "\f115";
 }
