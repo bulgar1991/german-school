@@ -2,8 +2,8 @@ $icons-font: "icons";
 
 @font-face {
     font-family: $icons-font;
-    src: url("/assets/fonts/icons.woff?944b9d0977032708663a7ec7c1e8ed20") format("woff"),
-url("/assets/fonts/icons.woff2?944b9d0977032708663a7ec7c1e8ed20") format("woff2");
+    src: url("/assets/fonts/icons.woff?e9a77d552a884926e5b2a96ff71e477a") format("woff"),
+url("/assets/fonts/icons.woff2?e9a77d552a884926e5b2a96ff71e477a") format("woff2");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -20,16 +20,25 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 $icons-map: (
     "whatsapp-brands-solid-full": "\f101",
     "viber-brands-solid-full": "\f102",
-    "phone-solid-full": "\f103",
-    "map-location-dot-solid-full": "\f104",
-    "facebook-f-brands-solid-full": "\f105",
-    "envelope-solid-full": "\f106",
-    "circle-plus-solid-full": "\f107",
-    "circle-minus-solid-full": "\f108",
-    "chevron-up-solid-full": "\f109",
-    "chevron-right-solid-full": "\f10a",
-    "chevron-left-solid-full": "\f10b",
-    "chevron-down-solid-full": "\f10c",
+    "users-solid-full": "\f103",
+    "stethoscope-solid-full": "\f104",
+    "square-check-solid-full": "\f105",
+    "phone-solid-full": "\f106",
+    "map-location-dot-solid-full": "\f107",
+    "language-solid-full": "\f108",
+    "facebook-f-brands-solid-full": "\f109",
+    "envelope-solid-full": "\f10a",
+    "clock-solid-full": "\f10b",
+    "circle-plus-solid-full": "\f10c",
+    "circle-minus-solid-full": "\f10d",
+    "child-solid-full": "\f10e",
+    "chevron-up-solid-full": "\f10f",
+    "chevron-right-solid-full": "\f110",
+    "chevron-left-solid-full": "\f111",
+    "chevron-down-solid-full": "\f112",
+    "calendar-solid-full": "\f113",
+    "briefcase-solid-full": "\f114",
+    "bolt-solid-full": "\f115",
 );
 
 .icon-whatsapp-brands-solid-full:before {
@@ -38,11 +47,23 @@ $icons-map: (
 .icon-viber-brands-solid-full:before {
     content: map-get($icons-map, "viber-brands-solid-full");
 }
+.icon-users-solid-full:before {
+    content: map-get($icons-map, "users-solid-full");
+}
+.icon-stethoscope-solid-full:before {
+    content: map-get($icons-map, "stethoscope-solid-full");
+}
+.icon-square-check-solid-full:before {
+    content: map-get($icons-map, "square-check-solid-full");
+}
 .icon-phone-solid-full:before {
     content: map-get($icons-map, "phone-solid-full");
 }
 .icon-map-location-dot-solid-full:before {
     content: map-get($icons-map, "map-location-dot-solid-full");
+}
+.icon-language-solid-full:before {
+    content: map-get($icons-map, "language-solid-full");
 }
 .icon-facebook-f-brands-solid-full:before {
     content: map-get($icons-map, "facebook-f-brands-solid-full");
@@ -50,11 +71,17 @@ $icons-map: (
 .icon-envelope-solid-full:before {
     content: map-get($icons-map, "envelope-solid-full");
 }
+.icon-clock-solid-full:before {
+    content: map-get($icons-map, "clock-solid-full");
+}
 .icon-circle-plus-solid-full:before {
     content: map-get($icons-map, "circle-plus-solid-full");
 }
 .icon-circle-minus-solid-full:before {
     content: map-get($icons-map, "circle-minus-solid-full");
+}
+.icon-child-solid-full:before {
+    content: map-get($icons-map, "child-solid-full");
 }
 .icon-chevron-up-solid-full:before {
     content: map-get($icons-map, "chevron-up-solid-full");
@@ -67,4 +94,13 @@ $icons-map: (
 }
 .icon-chevron-down-solid-full:before {
     content: map-get($icons-map, "chevron-down-solid-full");
+}
+.icon-calendar-solid-full:before {
+    content: map-get($icons-map, "calendar-solid-full");
+}
+.icon-briefcase-solid-full:before {
+    content: map-get($icons-map, "briefcase-solid-full");
+}
+.icon-bolt-solid-full:before {
+    content: map-get($icons-map, "bolt-solid-full");
 }

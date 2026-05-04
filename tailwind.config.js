@@ -16,18 +16,19 @@ export default {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
-        'light-black':   '#2D2D2D',
-        'scrollTrack':   '#8A90A1',
+        'light-black': '#2D2D2D',
+        scrollTrack: '#8A90A1',
         'yellow-scroll': '#FFF261',
         'medium-gray': '#707070',
+        'lady-blue': '#7F58F9',
       },
       maxWidth: {
         'screen-3xl': '1704px',
         'screen-4xl': '1920px',
       },
       padding: {
-        'mobile': '16px',
-        'desktop': '32px',
+        mobile: '16px',
+        desktop: '32px',
       },
     },
   },
